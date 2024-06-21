@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>MoonTour - Sewa Kendaraan dan Open Trip</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">MoonTour</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="article.html" class="nav-item nav-link">Article</a>
+                        <a href="services.html" class="nav-item nav-link active">Services</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="keranjang.html" class="nav-item nav-link" style="color: #94a684; font-size: 26px">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                    <a href="register.html" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4">Our Services</h1>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-white">Services</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Services Start -->
+        <div class="container-fluid bg-light service py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px">
+                    <h5 class="section-title px-3">Our Services</h5>
+                    <h1 class="mb-0">Explore Our Offerings</h1>
+                </div>
+                <div class="row g-4">
+                    <!-- Car Rental Service -->
+                    <div class="col-lg-6">
+                        <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
+                            <div class="service-content text-end">
+                                <h5 class="mb-4">Car Rental</h5>
+                                <p class="mb-0">Experience unparalleled freedom with our car rental service. Choose from a wide range of vehicles to explore your destination at your own pace.</p>
+                            </div>
+                            <div class="service-icon p-4">
+                                <i class="fa fa-car fa-4x text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Motor Rental Service -->
+                    <div class="col-lg-6">
+                        <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                            <div class="service-icon p-4">
+                                <i class="fa fa-motorcycle fa-4x text-primary"></i>
+                            </div>
+                            <div class="service-content">
+                                <h5 class="mb-4">Motor Rental</h5>
+                                <p class="mb-0">Experience the thrill of the road with our motor rental service. Perfect for adventurers seeking speed and flexibility.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bus Rental Service -->
+                    <div class="col-lg-6">
+                        <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
+                            <div class="service-content text-end">
+                                <h5 class="mb-4">Bus Damri</h5>
+                                <p class="mb-0">Travel in comfort and style with our bus rental service. Ideal for groups looking for a seamless travel experience.</p>
+                            </div>
+                            <div class="service-icon p-4">
+                                <i class="fa fa-bus fa-4x text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Angkot Rental Service -->
+                    <div class="col-lg-6">
+                        <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                            <div class="service-icon p-4">
+                                <i class="fa fa-taxi fa-4x text-primary"></i>
+                            </div>
+                            <div class="service-content">
+                                <h5 class="mb-4">Angkot Rental</h5>
+                                <p class="mb-0">Navigate through the bustling streets with ease using our angkot rental service. A local favorite for getting around.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Travel Guide Service -->
+                    <div class="col-lg-6">
+                        <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
+                            <div class="service-content text-end">
+                                <h5 class="mb-4">Travel Guide</h5>
+                                <p class="mb-0">Let our travel guides lead you on an unforgettable journey. Discover hidden gems and immerse yourself in the local culture.</p>
+                            </div>
+                            <div class="service-icon p-4">
+                                <i class="fa fa-user fa-4x text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Open Trip Service -->
+                    <div class="col-lg-6">
+                        <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                            <div class="service-icon p-4">
+                                <i class="fa fa-users fa-4x text-primary"></i>
+                            </div>
+                            <div class="service-content">
+                                <h5 class="mb-4">Open Trips</h5>
+                                <p class="mb-0">Join our open trips and meet fellow travelers. Discover new places, share experiences, and create memories that last a lifetime.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+        <!-- RENT KENDARAAN Start -->
+        <div class="container-fluid ExploreTour py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                    <h5 class="section-title px-3">Rent Vehicle</h5>
+                    <h1 class="mb-4">Explore the World with Our Rental Vehicles</h1>
+                    <p class="mb-0">Discover the freedom of travel with our rental vehicles. Whether you're planning a road trip, exploring a new city, or simply need a temporary vehicle, we've got you covered. With a wide range of options to choose from and convenient booking options, renting a vehicle has never been easier. Start your journey today!</p>
+                </div>                
+                <div class="tab-class text-center">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill " data-bs-toggle="pill" href="#MotorTab-1">
+                                <span class="text-dark" style="width: 250px;">Motor</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#MobilTab-2">
+                                <span class="text-dark" style="width: 250px;">Mobil</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#AngkotTab-3">
+                                <span class="text-dark" style="width: 250px;">Angkot</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#BusTab-4">
+                                <span class="text-dark" style="width: 250px;">Damri</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="MotorTab-1" class="tab-pane fade show p-0 ">
+                            <div class="row row-baris">
+                                <div class="row row--product mt-5">
+                                    <div class="col-md-6">
+                                        <h2>Honda Beat FI</h2>
+                                        <img src="img/motor-1.jpg" alt="Foto Produk" class="img-fluid custom-img">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 class="highlight judul-produk"> Harga mulai : 30.000/day </h3>
+                                        <ul class="nav nav-tabs mt-4" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="spesifikasi-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi" type="button" role="tab" aria-controls="spesifikasi" aria-selected="true">Spesifikasi</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link service" id="detail-harga-tab" data-bs-toggle="tab" data-bs-target="#detail-harga" type="button" role="tab" aria-controls="detail-harga" aria-selected="false">Detail Harga</button>
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="spesifikasi" role="tabpanel" aria-labelledby="spesifikasi-tab">
+                                                <ul class="motor-specs">
+                                                    <li><strong>Mesin:</strong> 1.2L Inline-4</li>
+                                                    <li><strong>Tenaga:</strong> 88 PS @ 6000 RPM</li>
+                                                    <li><strong>Torsi:</strong> 110 Nm @ 4800 RPM</li>
+                                                    <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="detail-harga" role="tabpanel" aria-labelledby="detail-harga-tab">
+                                                <div class="detail-harga-container">
+                                                    <h6> 6jam</h6>
+                                                    <li>Rp30.000</li>
+                                                    <h6> 12 jam</h6>
+                                                    <li>Rp40.000</li>
+                                                    <h6>Fullday</h6>
+                                                    <li>Rp70.000</li>
+                                                </div>
+                                            </div>                                                                                    
+                                        </div>
+                                        <button class="btn btn-primary mt-3">Sewa Sekarang  <i class="fas fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+
+                                <!-- Row untuk Yamaha NMAX 125 -->
+                                <div class="row row--product mt-5">
+                                    <div class="col-md-6">
+                                        <h2>Yamaha NMAX 125</h2>
+                                        <img src="img/motor-3.jpg" alt="Foto Produk Yamaha NMAX 125" class="img-fluid custom-img">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 class="highlight judul-produk"> Harga mulai : 40.000/day </h3>
+                                        <ul class="nav nav-tabs mt-4" id="myTabNMAX" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="spesifikasi-nmax-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-nmax" type="button" role="tab" aria-controls="spesifikasi-nmax" aria-selected="true">Spesifikasi</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link service" id="detail-harga-nmax-tab" data-bs-toggle="tab" data-bs-target="#detail-harga-nmax" type="button" role="tab" aria-controls="detail-harga-nmax" aria-selected="false">Detail Harga</button>
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="tab-content" id="myTabContentNMAX">
+                                            <div class="tab-pane fade show active" id="spesifikasi-nmax" role="tabpanel" aria-labelledby="spesifikasi-nmax-tab">
+                                                <ul class="motor-specs">
+                                                    <li><strong>Mesin:</strong> 125cc SOHC</li>
+                                                    <li><strong>Tenaga:</strong> 8.4 PS @ 8000 RPM</li>
+                                                    <li><strong>Torsi:</strong> 9.7 Nm @ 6000 RPM</li>
+                                                    <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="detail-harga-nmax" role="tabpanel" aria-labelledby="detail-harga-nmax-tab">
+                                                <div class="detail-harga-container">
+                                                    <h6> 6jam</h6>
+                                                    <li>Rp40.000</li>
+                                                    <h6> 12 jam</h6>
+                                                    <li>Rp50.000</li>
+                                                    <h6>Fullday</h6>
+                                                    <li>Rp90.000</li>
+                                                </div>
+                                            </div>                                                                                    
+                                        </div>
+                                        <button class="btn btn-primary mt-3">Sewa Sekarang  <i class="fas fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                                <!-- Row untuk Vespa Sprint -->
+                                <div class="row row--product mt-5">
+                                    <div class="col-md-6">
+                                        <h2>Vespa Sprint</h2>
+                                        <img src="img/motor-2.jpeg" alt="Foto Produk Vespa Sprint" class="img-fluid custom-img">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 class="highlight judul-produk"> Harga mulai : 300.000/day </h3>
+                                        <ul class="nav nav-tabs mt-4" id="myTabVespa" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="spesifikasi-vespa-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-vespa" type="button" role="tab" aria-controls="spesifikasi-vespa" aria-selected="true">Spesifikasi</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link service" id="detail-harga-vespa-tab" data-bs-toggle="tab" data-bs-target="#detail-harga-vespa" type="button" role="tab" aria-controls="detail-harga-vespa" aria-selected="false">Detail Harga</button>
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="tab-content" id="myTabContentVespa">
+                                            <div class="tab-pane fade show active" id="spesifikasi-vespa" role="tabpanel" aria-labelledby="spesifikasi-vespa-tab">
+                                                <ul class="motor-specs">
+                                                    <li><strong>Mesin:</strong> 125cc SOHC</li>
+                                                    <li><strong>Tenaga:</strong> 10 PS @ 7500 RPM</li>
+                                                    <li><strong>Torsi:</strong> 10 Nm @ 5500 RPM</li>
+                                                    <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="detail-harga-vespa" role="tabpanel" aria-labelledby="detail-harga-vespa-tab">
+                                                <div class="detail-harga-container">
+                                                    <h6> Sopir</h6>
+                                                    <li>Rp300.000/ Fullday.</li>
+                                                    <h6>Sopir+BBM</h6>
+                                                    <li>Rp400.000/ Fullday.</li>
+                                                </div>
+                                            </div>                                                                                    
+                                        </div>
+                                        <button class="btn btn-primary mt-3">Sewa Sekarang  <i class="fas fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                                <div class="row row-baris">
+                                    <!-- Row untuk Honda New Beat Eco -->
+                                    <div class="row row--product mt-5">
+                                        <div class="col-md-6">
+                                            <h2>Honda New Beat Eco</h2>
+                                            <img src="img/motor-4.jpg" alt="Foto Produk Honda New Beat Eco" class="img-fluid custom-img">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="highlight judul-produk"> Harga mulai : 75.000/day </h3>
+                                            <!-- Tab dan Konten Tab untuk Spesifikasi dan Detail Harga -->
+                                            <ul class="nav nav-tabs mt-4" id="myTabBeat" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="spesifikasi-Beat-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-Beat" type="button" role="tab" aria-controls="spesifikasi-Beat" aria-selected="true">Spesifikasi</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link service" id="detail-harga-Beat-tab" data-bs-toggle="tab" data-bs-target="#detail-harga-Beat" type="button" role="tab" aria-controls="detail-harga-Beat" aria-selected="false">Detail Harga</button>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="tab-content" id="myTabContentBeat">
+                                                <div class="tab-pane fade show active" id="spesifikasi-Beat" role="tabpanel" aria-labelledby="spesifikasi-Beat-tab">
+                                                    <ul class="motor-specs">
+                                                        <li><strong>Mesin:</strong> 125cc SOHC</li>
+                                                        <li><strong>Tenaga:</strong> 10 PS @ 7500 RPM</li>
+                                                        <li><strong>Torsi:</strong> 10 Nm @ 5500 RPM</li>
+                                                        <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="detail-harga-Beat" role="tabpanel" aria-labelledby="detail-harga-Beat-tab">
+                                                    <div class="detail-harga-container">
+                                                        <h6> Sopir</h6>
+                                                        <li>Rp300.000/ Fullday.</li>
+                                                        <h6>Sopir+BBM</h6>
+                                                        <li>Rp400.000/ Fullday.</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary mt-3">Sewa Sekarang  <i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <!-- Row untuk Honda New Beat Street -->
+                                    <div class="row row--product mt-5">
+                                        <div class="col-md-6">
+                                            <h2>Honda New Beat Street</h2>
+                                            <img src="img/motor-5.jpg" alt="Foto Produk Honda New Beat Street" class="img-fluid custom-img">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="highlight judul-produk"> Harga mulai : 75.000/day </h3>
+                                            <!-- Tab dan Konten Tab untuk Spesifikasi dan Detail Harga -->
+                                            <ul class="nav nav-tabs mt-4" id="myTabBeatStreet" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="spesifikasi-BeatStreet-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-BeatStreet" type="button" role="tab" aria-controls="spesifikasi-BeatStreet" aria-selected="true">Spesifikasi</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link service" id="detail-harga-BeatStreet-tab" data-bs-toggle="tab" data-bs-target="#detail-harga-BeatStreet" type="button" role="tab" aria-controls="detail-harga-BeatStreet" aria-selected="false">Detail Harga</button>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="tab-content" id="myTabContentBeatStreet">
+                                                <div class="tab-pane fade show active" id="spesifikasi-BeatStreet" role="tabpanel" aria-labelledby="spesifikasi-BeatStreet-tab">
+                                                    <ul class="motor-specs">
+                                                        <li><strong>Mesin:</strong> 125cc SOHC</li>
+                                                        <li><strong>Tenaga:</strong> 10 PS @ 7500 RPM</li>
+                                                        <li><strong>Torsi:</strong> 10 Nm @ 5500 RPM</li>
+                                                        <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="detail-harga-BeatStreet" role="tabpanel" aria-labelledby="detail-harga-BeatStreet-tab">
+                                                    <div class="detail-harga-container">
+                                                        <h6> Sopir</h6>
+                                                        <li>Rp300.000/ Fullday.</li>
+                                                        <h6>Sopir+BBM</h6>
+                                                        <li>Rp400.000/ Fullday.</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary mt-3">Sewa Sekarang  <i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <!-- Row untuk Honda Vario 110 -->
+                                    <div class="row row--product mt-5">
+                                        <div class="col-md-6">
+                                            <h2>Honda Vario 110</h2>
+                                            <img src="img/motor-6.jpg" alt="Foto Produk Honda Vario 110" class="img-fluid custom-img">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="highlight judul-produk"> Harga mulai : 75.000/day </h3>
+                                            <!-- Tab dan Konten Tab untuk Spesifikasi dan Detail Harga -->
+                                            <ul class="nav nav-tabs mt-4" id="myTabVario" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="spesifikasi-Vario-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-Vario" type="button" role="tab" aria-controls="spesifikasi-Vario" aria-selected="true">Spesifikasi</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link service" id="detail-harga-Vario-tab" data-bs-toggle="tab" data-bs-target="#detail-harga-Vario" type="button" role="tab" aria-controls="detail-harga-Vario" aria-selected="false">Detail Harga</button>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="tab-content" id="myTabContentVario">
+                                                <div class="tab-pane fade show active" id="spesifikasi-Vario" role="tabpanel" aria-labelledby="spesifikasi-Vario-tab">
+                                                    <ul class="motor-specs">
+                                                        <li><strong>Mesin:</strong> 125cc SOHC</li>
+                                                        <li><strong>Tenaga:</strong> 10 PS @ 7500 RPM</li>
+                                                        <li><strong>Torsi:</strong> 10 Nm @ 5500 RPM</li>
+                                                        <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="detail-harga-Vario" role="tabpanel" aria-labelledby="detail-harga-Vario-tab">
+                                                    <div class="detail-harga-container">
+                                                        <h6> Sopir</h6>
+                                                        <li>Rp300.000/ Fullday.</li>
+                                                        <h6>Sopir+BBM</h6>
+                                                        <li>Rp400.000/ Fullday.</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary mt-3">Sewa Sekarang  <i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <!-- Row untuk Yamaha Mio Soul GT -->
+                                    <div class="row row--product mt-5">
+                                        <div class="col-md-6">
+                                            <h2>Yamaha Mio Soul GT</h2>
+                                            <img src="img/motor-7.jpg" alt="Foto Produk Yamaha Mio Soul GT" class="img-fluid custom-img">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="highlight judul-produk"> Harga mulai : 75.000/day </h3>
+                                            <!-- Tab dan Konten Tab untuk Spesifikasi dan Detail Harga -->
+                                            <ul class="nav nav-tabs mt-4" id="myTabMio" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="spesifikasi-Mio-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-Mio" type="button" role="tab" aria-controls="spesifikasi-Mio" aria-selected="true">Spesifikasi</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link service" id="detail-harga-Mio-tab" data-bs-toggle="tab" data-bs-target="#detail-harga-Mio" type="button" role="tab" aria-controls="detail-harga-Mio" aria-selected="false">Detail Harga</button>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="tab-content" id="myTabContentMio">
+                                                <div class="tab-pane fade show active" id="spesifikasi-Mio" role="tabpanel" aria-labelledby="spesifikasi-Mio-tab">
+                                                    <ul class="motor-specs">
+                                                        <li><strong>Mesin:</strong> 125cc SOHC</li>
+                                                        <li><strong>Tenaga:</strong> 10 PS @ 7500 RPM</li>
+                                                        <li><strong>Torsi:</strong> 10 Nm @ 5500 RPM</li>
+                                                        <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="detail-harga-Mio" role="tabpanel" aria-labelledby="detail-harga-Mio-tab">
+                                                    <div class="detail-harga-container">
+                                                        <h6> Sopir</h6>
+                                                        <li>Rp300.000/ Fullday.</li>
+                                                        <h6>Sopir+BBM</h6>
+                                                        <li>Rp400.000/ Fullday.</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary mt-3">Sewa Sekarang  <i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <!-- Row untuk Honda Scoopy -->
+                                    <div class="row row--product mt-5">
+                                        <div class="col-md-6">
+                                            <h2>Honda Scoopy</h2>
+                                            <img src="img/motor-8.jpeg" alt="Foto Produk Honda Scoopy" class="img-fluid custom-img">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="highlight judul-produk"> Harga mulai : 80.000/day </h3>
+                                            <!-- Tab dan Konten Tab untuk Spesifikasi dan Detail Harga -->
+                                            <ul class="nav nav-tabs mt-4" id="myTabScoopy" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="spesifikasi-Scoopy-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-Scoopy" type="button" role="tab" aria-controls="spesifikasi-Scoopy" aria-selected="true">Spesifikasi</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link service" id="detail-harga-Scoopy-tab" data-bs-toggle="tab" data-bs-target="#detail-harga-Scoopy" type="button" role="tab" aria-controls="detail-harga-Scoopy" aria-selected="false">Detail Harga</button>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="tab-content" id="myTabContentScoopy">
+                                                <div class="tab-pane fade show active" id="spesifikasi-Scoopy" role="tabpanel" aria-labelledby="spesifikasi-Scoopy-tab">
+                                                    <ul class="motor-specs">
+                                                        <li><strong>Mesin:</strong> 125cc SOHC</li>
+                                                        <li><strong>Tenaga:</strong> 10 PS @ 7500 RPM</li>
+                                                        <li><strong>Torsi:</strong> 10 Nm @ 5500 RPM</li>
+                                                        <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="detail-harga-Scoopy" role="tabpanel" aria-labelledby="detail-harga-Scoopy-tab">
+                                                    <div class="detail-harga-container">
+                                                        <h6> Sopir</h6>
+                                                        <li>Rp300.000/ Fullday.</li>
+                                                        <h6>Sopir+BBM</h6>
+                                                        <li>Rp400.000/ Fullday.</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary mt-3">Sewa Sekarang  <i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <!-- Row untuk Honda New Scoopy -->
+                                    <div class="row row--product mt-5">
+                                        <div class="col-md-6">
+                                            <h2>Honda New Scoopy</h2>
+                                            <img src="img/motor-9.jpg" alt="Foto Produk Honda New Scoopy" class="img-fluid custom-img">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="highlight judul-produk"> Harga mulai : 85.000/day </h3>
+                                            <!-- Tab dan Konten Tab untuk Spesifikasi dan Detail Harga -->
+                                            <ul class="nav nav-tabs mt-4" id="myTabNewScoopy" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="spesifikasi-NewScoopy-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-NewScoopy" type="button" role="tab" aria-controls="spesifikasi-NewScoopy" aria-selected="true">Spesifikasi</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link service" id="detail-harga-NewScoopy-tab" data-bs-toggle="tab" data-bs-target="#detail-harga-NewScoopy" type="button" role="tab" aria-controls="detail-harga-NewScoopy" aria-selected="false">Detail Harga</button>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="tab-content" id="myTabContentNewScoopy">
+                                                <div class="tab-pane fade show active" id="spesifikasi-NewScoopy" role="tabpanel" aria-labelledby="spesifikasi-NewScoopy-tab">
+                                                    <ul class="motor-specs">
+                                                        <li><strong>Mesin:</strong> 125cc SOHC</li>
+                                                        <li><strong>Tenaga:</strong> 10 PS @ 7500 RPM</li>
+                                                        <li><strong>Torsi:</strong> 10 Nm @ 5500 RPM</li>
+                                                        <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="detail-harga-NewScoopy" role="tabpanel" aria-labelledby="detail-harga-NewScoopy-tab">
+                                                    <div class="detail-harga-container">
+                                                        <h6> Sopir</h6>
+                                                        <li>Rp300.000/ Fullday.</li>
+                                                        <h6>Sopir+BBM</h6>
+                                                        <li>Rp400.000/ Fullday.</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary mt-3">Sewa Sekarang  <i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <!-- Row untuk Honda Vario 125 -->
+                                    <div class="row row--product mt-5">
+                                        <div class="col-md-6">
+                                            <h2>Honda Vario 125</h2>
+                                            <img src="img/motor-10.jpg" alt="Foto Produk Honda Vario 125" class="img-fluid custom-img">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="highlight judul-produk"> Harga mulai : 80.000/day </h3>
+                                            <!-- Tab dan Konten Tab untuk Spesifikasi dan Detail Harga -->
+                                            <ul class="nav nav-tabs mt-4" id="myTabVario125" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="spesifikasi-Vario125-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-Vario125" type="button" role="tab" aria-controls="spesifikasi-Vario125" aria-selected="true">Spesifikasi</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link service" id="detail-harga-Vario125-tab" data-bs-toggle="tab" data-bs-target="#detail-harga-Vario125" type="button" role="tab" aria-controls="detail-harga-Vario125" aria-selected="false">Detail Harga</button>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="tab-content" id="myTabContentVario125">
+                                                <div class="tab-pane fade show active" id="spesifikasi-Vario125" role="tabpanel" aria-labelledby="spesifikasi-Vario125-tab">
+                                                    <ul class="motor-specs">
+                                                        <li><strong>Mesin:</strong> 125cc SOHC</li>
+                                                        <li><strong>Tenaga:</strong> 10 PS @ 7500 RPM</li>
+                                                        <li><strong>Torsi:</strong> 10 Nm @ 5500 RPM</li>
+                                                        <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="detail-harga-Vario125" role="tabpanel" aria-labelledby="detail-harga-Vario125-tab">
+                                                    <div class="detail-harga-container">
+                                                        <h6> Sopir</h6>
+                                                        <li>Rp300.000/ Fullday.</li>
+                                                        <h6>Sopir+BBM</h6>
+                                                        <li>Rp400.000/ Fullday.</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary mt-3">Sewa Sekarang  <i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <!-- Row untuk Yamaha Fazzio -->
+                                    <div class="row row--product mt-5">
+                                        <div class="col-md-6">
+                                            <h2>Yamaha Fazzio</h2>
+                                            <img src="img/motor-11.jpg" alt="Foto Produk Yamaha Fazzio" class="img-fluid custom-img">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="highlight judul-produk"> Harga mulai : 90.000/day </h3>
+                                            <!-- Tab dan Konten Tab untuk Spesifikasi dan Detail Harga -->
+                                            <ul class="nav nav-tabs mt-4" id="myTabFazzio" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="spesifikasi-Fazzio-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-Fazzio" type="button" role="tab" aria-controls="spesifikasi-Fazzio" aria-selected="true">Spesifikasi</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link service" id="detail-harga-Fazzio-tab" data-bs-toggle="tab" data-bs-target="#detail-harga-Fazzio" type="button" role="tab" aria-controls="detail-harga-Fazzio" aria-selected="false">Detail Harga</button>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="tab-content" id="myTabContentFazzio">
+                                                <div class="tab-pane fade show active" id="spesifikasi-Fazzio" role="tabpanel" aria-labelledby="spesifikasi-Fazzio-tab">
+                                                    <ul class="motor-specs">
+                                                        <li><strong>Mesin:</strong> 125cc SOHC</li>
+                                                        <li><strong>Tenaga:</strong> 10 PS @ 7500 RPM</li>
+                                                        <li><strong>Torsi:</strong> 10 Nm @ 5500 RPM</li>
+                                                        <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="detail-harga-Fazzio" role="tabpanel" aria-labelledby="detail-harga-Fazzio-tab">
+                                                    <div class="detail-harga-container">
+                                                        <h6> Sopir</h6>
+                                                        <li>Rp300.000/ Fullday.</li>
+                                                        <h6>Sopir+BBM</h6>
+                                                        <li>Rp400.000/ Fullday.</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary mt-3">Sewa Sekarang  <i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <!-- Row untuk Yamaha Lexi -->
+                                    <div class="row row--product mt-5">
+                                        <div class="col-md-6">
+                                            <h2>Yamaha Lexi</h2>
+                                            <img src="img/motor-12.png" alt="Foto Produk Yamaha Lexi" class="img-fluid custom-img">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="highlight judul-produk"> Harga mulai : 90.000/day </h3>
+                                            <!-- Tab dan Konten Tab untuk Spesifikasi dan Detail Harga -->
+                                            <ul class="nav nav-tabs mt-4" id="myTabLexi" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="spesifikasi-Lexi-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-Lexi" type="button" role="tab" aria-controls="spesifikasi-Lexi" aria-selected="true">Spesifikasi</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link service" id="detail-harga-Lexi-tab" data-bs-toggle="tab" data-bs-target="#detail-harga-Lexi" type="button" role="tab" aria-controls="detail-harga-Lexi" aria-selected="false">Detail Harga</button>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="tab-content" id="myTabContentLexi">
+                                                <div class="tab-pane fade show active" id="spesifikasi-Lexi" role="tabpanel" aria-labelledby="spesifikasi-Lexi-tab">
+                                                    <ul class="motor-specs">
+                                                        <li><strong>Mesin:</strong> 125cc SOHC</li>
+                                                        <li><strong>Tenaga:</strong> 10 PS @ 7500 RPM</li>
+                                                        <li><strong>Torsi:</strong> 10 Nm @ 5500 RPM</li>
+                                                        <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="detail-harga-Lexi" role="tabpanel" aria-labelledby="detail-harga-Lexi-tab">
+                                                    <div class="detail-harga-container">
+                                                        <h6> Sopir</h6>
+                                                        <li>Rp300.000/ Fullday.</li>
+                                                        <h6>Sopir+BBM</h6>
+                                                        <li>Rp400.000/ Fullday.</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary mt-3">Sewa Sekarang  <i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <!-- Row untuk Honda Vario 150 -->
+                                    <div class="row row--product mt-5">
+                                        <div class="col-md-6">
+                                            <h2>Honda Vario 150</h2>
+                                            <img src="img/motor-13.jpg" alt="Foto Produk Honda Vario 150" class="img-fluid custom-img">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="highlight judul-produk"> Harga mulai : 90.000/day </h3>
+                                            <!-- Tab dan Konten Tab untuk Spesifikasi dan Detail Harga -->
+                                            <ul class="nav nav-tabs mt-4" id="myTabVario150" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="spesifikasi-Vario150-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-Vario150" type="button" role="tab" aria-controls="spesifikasi-Vario150" aria-selected="true">Spesifikasi</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link service" id="detail-harga-Vario150-tab" data-bs-toggle="tab" data-bs-target="#detail-harga-Vario150" type="button" role="tab" aria-controls="detail-harga-Vario150" aria-selected="false">Detail Harga</button>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="tab-content" id="myTabContentVario150">
+                                                <div class="tab-pane fade show active" id="spesifikasi-Vario150" role="tabpanel" aria-labelledby="spesifikasi-Vario150-tab">
+                                                    <ul class="motor-specs">
+                                                        <li><strong>Mesin:</strong> 125cc SOHC</li>
+                                                        <li><strong>Tenaga:</strong> 10 PS @ 7500 RPM</li>
+                                                        <li><strong>Torsi:</strong> 10 Nm @ 5500 RPM</li>
+                                                        <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="detail-harga-Vario150" role="tabpanel" aria-labelledby="detail-harga-Vario150-tab">
+                                                    <div class="detail-harga-container">
+                                                        <h6> Sopir</h6>
+                                                        <li>Rp300.000/ Fullday.</li>
+                                                        <h6>Sopir+BBM</h6>
+                                                        <li>Rp400.000/ Fullday.</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary mt-3">Sewa Sekarang  <i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <!-- Row untuk Yamaha Aerox -->
+                                    <div class="row row--product mt-5">
+                                        <div class="col-md-6">
+                                            <h2>Yamaha Aerox</h2>
+                                            <img src="img/motor-14.png" alt="Foto Produk Yamaha Aerox" class="img-fluid custom-img">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="highlight judul-produk"> Harga mulai : 100.000/day </h3>
+                                            <!-- Tab dan Konten Tab untuk Spesifikasi dan Detail Harga -->
+                                            <ul class="nav nav-tabs mt-4" id="myTabAerox" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="spesifikasi-Aerox-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-Aerox" type="button" role="tab" aria-controls="spesifikasi-Aerox" aria-selected="true">Spesifikasi</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link service" id="detail-harga-Aerox-tab" data-bs-toggle="tab" data-bs-target="#detail-harga-Aerox" type="button" role="tab" aria-controls="detail-harga-Aerox" aria-selected="false">Detail Harga</button>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="tab-content" id="myTabContentAerox">
+                                                <div class="tab-pane fade show active" id="spesifikasi-Aerox" role="tabpanel" aria-labelledby="spesifikasi-Aerox-tab">
+                                                    <ul class="motor-specs">
+                                                        <li><strong>Mesin:</strong> 125cc SOHC</li>
+                                                        <li><strong>Tenaga:</strong> 10 PS @ 7500 RPM</li>
+                                                        <li><strong>Torsi:</strong> 10 Nm @ 5500 RPM</li>
+                                                        <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="detail-harga-Aerox" role="tabpanel" aria-labelledby="detail-harga-Aerox-tab">
+                                                    <div class="detail-harga-container">
+                                                        <h6> Sopir</h6>
+                                                        <li>Rp300.000/ Fullday.</li>
+                                                        <h6>Sopir+BBM</h6>
+                                                        <li>Rp400.000/ Fullday.</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary mt-3">Sewa Sekarang  <i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div id="MobilTab-2" class="tab-pane fade show p-0">
+                            <div class="row row-baris">
+                                <div class="row row--product mt-5">
+                                    <div class="col-md-6">
+                                        <h2>Toyota Avanza</h2>
+                                        <img src="img/mobil-1.png" alt="Foto Produk" class="img-fluid custom-img">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 class="highlight judul-produk"> Harga mulai : 300.000/day </h3>
+                                        <ul class="nav nav-tabs mt-4" id="myTabAvanza" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="spesifikasi-Avanza-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-Avanza" type="button" role="tab" aria-controls="spesifikasi-Avanza" aria-selected="true">Spesifikasi</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link service" id="detail-harga-Avanza-tab" data-bs-toggle="tab" data-bs-target="#detail-harga-Avanza" type="button" role="tab" aria-controls="detail-harga-Avanza" aria-selected="false">Detail Harga</button>
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="tab-content" id="myTabContentAvanza">
+                                            <div class="tab-pane fade show active" id="spesifikasi-Avanza" role="tabpanel" aria-labelledby="spesifikasi-Avanza-tab">
+                                                <ul class="motor-specs">
+                                                    <li><strong>Mesin:</strong> 125cc SOHC</li>
+                                                    <li><strong>Tenaga:</strong> 10 PS @ 7500 RPM</li>
+                                                    <li><strong>Torsi:</strong> 10 Nm @ 5500 RPM</li>
+                                                    <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="detail-harga-Avanza" role="tabpanel" aria-labelledby="detail-harga-Avanza-tab">
+                                                <div class="detail-harga-container">
+                                                    <h6> Sopir</h6>
+                                                    <li>Rp300.000/ Fullday.</li>
+                                                    <h6>Sopir+BBM</h6>
+                                                    <li>Rp400.000/ Fullday.</li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary mt-3">Sewa Sekarang  <i class="fas fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="AngkotTab-3" class="tab-pane fade show p-0">
+                            <div class="row row-baris">
+                                <div class="row row--product mt-5">
+                                    <div class="col-md-6">
+                                        <h2>Honda Beat FI</h2>
+                                        <img src="img/blog-3.jpg" alt="Foto Produk" class="img-fluid custom-img">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 class="highlight judul-produk"> Harga mulai : 300.000/day </h3>
+                                        <ul class="nav nav-tabs mt-4" id="myTabAngkot" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="spesifikasi-Angkot-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-Angkot" type="button" role="tab" aria-controls="spesifikasi-Angkot" aria-selected="true">Spesifikasi</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link service" id="detail-harga-Angkot-tab" data-bs-toggle="tab" data-bs-target="#detail-harga-Angkot" type="button" role="tab" aria-controls="detail-harga-Angkot" aria-selected="false">Detail Harga</button>
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="tab-content" id="myTabContentAngkot">
+                                            <div class="tab-pane fade show active" id="spesifikasi-Angkot" role="tabpanel" aria-labelledby="spesifikasi-Angkot-tab">
+                                                <ul class="motor-specs">
+                                                    <li><strong>Mesin:</strong> 125cc SOHC</li>
+                                                    <li><strong>Tenaga:</strong> 10 PS @ 7500 RPM</li>
+                                                    <li><strong>Torsi:</strong> 10 Nm @ 5500 RPM</li>
+                                                    <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="detail-harga-Angkot" role="tabpanel" aria-labelledby="detail-harga-Angkot-tab">
+                                                <div class="detail-harga-container">
+                                                    <h6> Sopir</h6>
+                                                    <li>Rp300.000/ Fullday.</li>
+                                                    <h6>Sopir+BBM</h6>
+                                                    <li>Rp400.000/ Fullday.</li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary mt-3">Sewa Sekarang  <i class="fas fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="BusTab-4" class="tab-pane fade show p-0">
+                            <div class="row row-baris">
+                                <div class="row row--product mt-5">
+                                    <div class="col-md-6">
+                                        <h2>Bus Damri</h2>
+                                        <img src="img/mitra-6.jpeg" alt="Foto Produk" class="img-fluid custom-img">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 class="highlight judul-produk"> Harga mulai : 1.000.000/day </h3>
+                                        <ul class="nav nav-tabs mt-4" id="myTabDamri" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="spesifikasi-Damri-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-Damri" type="button" role="tab" aria-controls="spesifikasi-Damri" aria-selected="true">Spesifikasi</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link service" id="detail-harga-Damri-tab" data-bs-toggle="tab" data-bs-target="#detail-harga-Damri" type="button" role="tab" aria-controls="detail-harga-Damri" aria-selected="false">Detail Harga</button>
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="tab-content" id="myTabContentDamri">
+                                            <div class="tab-pane fade show active" id="spesifikasi-Damri" role="tabpanel" aria-labelledby="spesifikasi-Damri-tab">
+                                                <ul class="motor-specs">
+                                                    <li><strong>Mesin:</strong> 125cc SOHC</li>
+                                                    <li><strong>Tenaga:</strong> 10 PS @ 7500 RPM</li>
+                                                    <li><strong>Torsi:</strong> 10 Nm @ 5500 RPM</li>
+                                                    <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="detail-harga-Damri" role="tabpanel" aria-labelledby="detail-harga-Damri-tab">
+                                                <div class="detail-harga-container">
+                                                    <h6>Sopir+BBM</h6>
+                                                    <li>Rp1.000.000/ Fullday.</li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary mt-3">Sewa Sekarang  <i class="fas fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- RENT KENDARAAN Start -->
+
+        <!-- Explore Tour Start -->
+        <div class="container-fluid ExploreTour py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                    <h5 class="section-title px-3">Discover Open Trips</h5>
+                    <h1 class="mb-4">Unveiling New Horizons</h1>
+                    <p class="mb-0">Join Moon Tour's open trips for extraordinary adventures that dive deep into local cultures, uncovering hidden treasures and authentic experiences. Perfect for those looking for thrilling escapades, serene retreats, or a mix of both, these trips guarantee memorable journeys.</p>
+            </div>
+                <div class="tab-class text-center">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#TripTab-1">
+                                <span class="text-dark" style="width: 250px;">Open Trip</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="TripTab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="packages-item">
+                                        <div class="packages-img">
+                                            <img src="img/trip-1.jpg" class="img-fluid w-100 rounded-top" alt="Image" />
+                                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5">
+                                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Bromo Tour</small>
+                                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>1 day</small>
+                                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>1-8 persons</small>
+                                            </div>
+                                        </div>
+                                        <div class="packages-content bg-light">
+                                            <div class="p-4 pb-0">
+                                                <h5 class="mb-0">Bromo Tour</h5>
+                                                <small class="text-uppercase">Our Trip</small>
+                                                <div class="mb-3">
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                </div>
+                                                <p class="mb-4">Discover Mount Bromo's beauty with our tour package. Experience the mesmerizing sunrise, trek through the Sea of Sand, and witness stunning views.</p>
+                                            </div>
+                                            <div class="row bg-primary rounded-bottom mx-0">
+                                                <div class="col-6 text-start px-0">
+                                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                                </div>
+                                                <div class="col-6 text-end px-0">
+                                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="packages-item">
+                                        <div class="packages-img position-relative">
+                                            <!-- Pastikan.packages-img memiliki position: relative -->
+                                            <img src="img/trip-5.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                                <!-- Elemen ini sekarang harus muncul di atas gambar jika CSS dikonfigurasi dengan benar -->
+                                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Private Trip Bromo</small>
+                                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>1 days</small>
+                                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>1-6 Person</small>
+                                            </div>
+                                        </div>                                        
+                                        <div class="packages-content bg-light">
+                                            <!-- Konten paket -->
+                                            <div class="p-4 pb-0">
+                                                <h5 class="mb-0">Private Trip Bromo</h5>
+                                                <small class="text-uppercase">Trip Deals</small>
+                                                <div class="mb-3">
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                </div>
+                                                <p class="mb-4">Discover Mount Bromo's beauty with our tour package. Experience the mesmerizing sunrise, trek through the Sea of Sand, and witness stunning views.</p>
+                                            </div>
+                                            <div class="row bg-primary rounded-bottom mx-0">
+                                                <div class="col-6 text-start px-0">
+                                                    <a href="service-detail.html" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                                </div>
+                                                <div class="col-6 text-end px-0">
+                                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="packages-item">
+                                        <div class="packages-img position-relative">
+                                            <!-- Pastikan.packages-img memiliki position: relative -->
+                                            <img src="img/trip-2.png" class="img-fluid w-100 rounded-top" alt="Image">
+                                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                                <!-- Elemen ini sekarang harus muncul di atas gambar jika CSS dikonfigurasi dengan benar -->
+                                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Jatim Park Tour</small>
+                                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>2 days</small>
+                                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                                            </div>
+                                        </div>                                        
+                                        <div class="packages-content bg-light">
+                                            <!-- Konten paket -->
+                                            <div class="p-4 pb-0">
+                                                <h5 class="mb-0">Jatim Park Tour</h5>
+                                                <small class="text-uppercase">Tour Deals</small>
+                                                <div class="mb-3">
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                </div>
+                                                <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia quae illum aperiam fugiat voluptatem repellat</p>
+                                            </div>
+                                            <div class="row bg-primary rounded-bottom mx-0">
+                                                <div class="col-6 text-start px-0">
+                                                    <a href="service-detail.html" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                                </div>
+                                                <div class="col-6 text-end px-0">
+                                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="packages-item">
+                                        <div class="packages-img position-relative">
+                                            <!-- Pastikan.packages-img memiliki position: relative -->
+                                            <img src="img/trip-3.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                                <!-- Elemen ini sekarang harus muncul di atas gambar jika CSS dikonfigurasi dengan benar -->
+                                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Venice - Italy</small>
+                                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>3 days</small>
+                                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                                            </div>
+                                        </div>                                        
+                                        <div class="packages-content bg-light">
+                                            <!-- Konten paket -->
+                                            <div class="p-4 pb-0">
+                                                <h5 class="mb-0">Venice - Italy</h5>
+                                                <small class="text-uppercase">Hotel Deals</small>
+                                                <div class="mb-3">
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                </div>
+                                                <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia quae illum aperiam fugiat voluptatem repellat</p>
+                                            </div>
+                                            <div class="row bg-primary rounded-bottom mx-0">
+                                                <div class="col-6 text-start px-0">
+                                                    <a href="service-detail.html" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                                </div>
+                                                <div class="col-6 text-end px-0">
+                                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="packages-item">
+                                        <div class="packages-img position-relative">
+                                            <!-- Pastikan.packages-img memiliki position: relative -->
+                                            <img src="img/trip-4.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                                <!-- Elemen ini sekarang harus muncul di atas gambar jika CSS dikonfigurasi dengan benar -->
+                                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Venice - Italy</small>
+                                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>3 days</small>
+                                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                                            </div>
+                                        </div>                                        
+                                        <div class="packages-content bg-light">
+                                            <!-- Konten paket -->
+                                            <div class="p-4 pb-0">
+                                                <h5 class="mb-0">Venice - Italy</h5>
+                                                <small class="text-uppercase">Hotel Deals</small>
+                                                <div class="mb-3">
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                    <small class="fa fa-star text-primary"></small>
+                                                </div>
+                                                <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia quae illum aperiam fugiat voluptatem repellat</p>
+                                            </div>
+                                            <div class="row bg-primary rounded-bottom mx-0">
+                                                <div class="col-6 text-start px-0">
+                                                    <a href="service-detail.html" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                                </div>
+                                                <div class="col-6 text-end px-0">
+                                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Explore Tour Start
+
+        <div class="container-fluid packages py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px">
+                    <h5 class="section-title px-3">Packages</h5>
+                    <h1 class="mb-0">Awesome Packages Trip</h1>
+                </div>
+                <div class="packages-carousel owl-carousel">
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img src="img/trip-1.jpg" class="img-fluid w-100 rounded-top" alt="Image" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Bromo Tour</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>1 days</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>1-8 person</small>
+                            </div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Bromo Tour</h5>
+                                <small class="text-uppercase">Our Trip</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Discover Mount Bromo's beauty with our tour package. Experience the mesmerizing sunrise, trek through the Sea of Sand, and witness stunning.</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img src="img/trip-2.png" class="img-fluid w-100 rounded-top" alt="Image" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Jatim Park Trip</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>2 days</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>1 Person</small>
+                            </div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Jatim Park Trip</h5>
+                                <small class="text-uppercase">Our Trip</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia quae illum aperiam fugiat voluptatem repellat</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img src="img/trip-3.jpg" class="img-fluid w-100 rounded-top" alt="Image" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Pantai Trip</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>1 days</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>1 Person</small>
+                            </div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Pantai Trip</h5>
+                                <small class="text-uppercase">Our Trip</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia quae illum aperiam fugiat voluptatem repellat</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img src="img/trip-4.jpg" class="img-fluid w-100 rounded-top" alt="Image" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>kayutangan</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>1 days</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>1-7 Person</small>
+                            </div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Kampoeng Kayutangan Heritage Tour</h5>
+                                <small class="text-uppercase">Our Trip</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia quae illum aperiam fugiat voluptatem repellat</p>
+                            </div>
+
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <-- Testimonial Start -->
+        <div class="container-fluid testimonial py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px">
+                    <h5 class="section-title px-3">Testimonial</h5>
+                    <h1 class="mb-0">Our Clients Say!!!</h1>
+                </div>
+                <div class="testimonial-carousel owl-carousel">
+                    <div class="testimonial-item text-center rounded pb-4">
+                        <div class="testimonial-comment bg-light rounded p-4">
+                            <p class="text-center mb-5">
+                                "Moontour telah memberikan pengalaman yang tak terlupakan. Layanan rental motor dan tour guide mereka sangat membantu dalam menjelajahi keindahan Indonesia. Open trip yang mereka adakan juga sangat menarik,
+                                memungkinkan kami untuk bertemu dengan orang-orang baru dari berbagai daerah di Indonesia. Terima kasih Moontour!"
+                            </p>
+                        </div>
+                        <div class="testimonial-img p-1">
+                            <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle" alt="Image" />
+                        </div>
+                        <div style="margin-top: -35px">
+                            <h5 class="mb-0">Iwan Setiawan</h5>
+                            <p class="mb-0">Jakarta, Indonesia</p>
+                            <div class="d-flex justify-content-center">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center rounded pb-4">
+                        <div class="testimonial-comment bg-light rounded p-4">
+                            <p class="text-center mb-5">
+                                "Saya sangat puas dengan layanan Moontour. Mereka menyediakan motor yang nyaman dan tour guide yang ramah. Open trip mereka sangat menarik, memungkinkan saya untuk mengenal lebih dekat budaya dan keindahan
+                                Indonesia. Saya akan merekomendasikan Moontour kepada teman-teman saya."
+                            </p>
+                        </div>
+                        <div class="testimonial-img p-1">
+                            <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle" alt="Image" />
+                        </div>
+                        <div style="margin-top: -35px">
+                            <h5 class="mb-0">Ani Rahayu</h5>
+                            <p class="mb-0">Bandung, Indonesia</p>
+                            <div class="d-flex justify-content-center">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center rounded pb-4">
+                        <div class="testimonial-comment bg-light rounded p-4">
+                            <p class="text-center mb-5">
+                                "Pengalaman menggunakan layanan Moontour sangat memuaskan. Motor yang disediakan dalam kondisi baik dan tour guide yang informatif membuat perjalanan kami menjadi lebih menyenangkan. Open trip mereka juga
+                                sangat menarik, memberikan kesempatan untuk bertemu dan berinteraksi dengan orang-orang dari berbagai daerah di Indonesia."
+                            </p>
+                        </div>
+                        <div class="testimonial-img p-1">
+                            <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle" alt="Image" />
+                        </div>
+                        <div style="margin-top: -35px">
+                            <h5 class="mb-0">Qurrota</h5>
+                            <p class="mb-0">Surabaya, Indonesia</p>
+                            <div class="d-flex justify-content-center">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center rounded pb-4">
+                        <div class="testimonial-comment bg-light rounded p-4">
+                            <p class="text-center mb-5">
+                                "Moontour telah memberikan pengalaman yang luar biasa. Layanan rental motor dan tour guide mereka sangat membantu dalam menjelajahi keindahan Indonesia. Open trip yang mereka adakan juga sangat menarik,
+                                memungkinkan kami untuk bertemu dengan orang-orang baru dari berbagai daerah di Indonesia. Terima kasih Moontour!"
+                            </p>
+                        </div>
+                        <div class="testimonial-img p-1">
+                            <img src="img/testimonial-4.jpg" class="img-fluid rounded-circle" alt="Image" />
+                        </div>
+                        <div style="margin-top: -35px">
+                            <h5 class="mb-0">Lintang Angraini</h5>
+                            <p class="mb-0">Gresik, Indonesia</p>
+                            <div class="d-flex justify-content-center">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Get In Touch</h4>
+                            <a href=""><i class="fas fa-home me-2"></i> Panorama Garden, Malang</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> MoonTour@gmail.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +62 812 345 678</a>
+                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +031 2345</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-white me-2"></i>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Company</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> About</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Careers</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Press</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Gift Cards</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Magazine</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Support</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Contact</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Legal Notice</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Terms and Conditions</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Sitemap</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Cookie policy</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <div class="row gy-3 gx-2 mb-4">
+                                <div class="col-xl-6">
+                                    <form>
+                                        <div class="form-floating">
+                                            <select class="form-select bg-dark border" id="select1">
+                                                <option value="1">Arabic</option>
+                                                <option value="2">German</option>
+                                                <option value="3">Greek</option>
+                                                <option value="3">New York</option>
+                                            </select>
+                                            <label for="select1">English</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-xl-6">
+                                    <form>
+                                        <div class="form-floating">
+                                            <select class="form-select bg-dark border" id="select1">
+                                                <option value="1">USD</option>
+                                                <option value="2">EUR</option>
+                                                <option value="3">INR</option>
+                                                <option value="3">GBP</option>
+                                            </select>
+                                            <label for="select1">$</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <h4 class="text-white mb-3">Payments</h4>
+                            <div class="footer-bank-card">
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-amex fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-visa fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fas fa-credit-card fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-mastercard fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-paypal fa-2x"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-cc-discover fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright text-body py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-end mb-md-0">
+                        <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">MoonTour</a>, All right reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-start">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="text-white" > Lintang Angraini N.L.R</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

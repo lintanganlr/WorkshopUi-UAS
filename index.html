@@ -1,0 +1,1912 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>MoonTour - Sewa Kendaraan dan Open Trip</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet" />
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">MoonTour</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="article.html" class="nav-item nav-link">Article</a>
+                        <a href="services.html" class="nav-item nav-link">Services</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="keranjang.html" class="nav-item nav-link" style="color: #94a684; font-size: 26px">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                    <a href="register.html" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+                </div>
+            </nav>
+
+            <!-- Carousel Start -->
+            <div class="carousel-header">
+                <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="4"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="img/carousel-1.jpg" class="img-fluid" alt="Image" />
+                            <div class="carousel-caption">
+                                <div class="p-3" style="max-width: 900px">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px">Embark on Your Journey</h4>
+                                    <h1 class="display-2 text-capitalize text-white mb-4">Your Adventure at MoonTour</h1>
+                                    <p class="mb-5 fs-5">Discover the world with us, creating lasting memories.</p>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#">Start Exploring</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel-2.jpg" class="img-fluid" alt="Image" />
+                            <div class="carousel-caption">
+                                <div class="p-3" style="max-width: 900px">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px">Discover New Horizons</h4>
+                                    <h1 class="display-2 text-capitalize text-white mb-4">Together We Explore</h1>
+                                    <p class="mb-5 fs-5">Explore the wonders of the world with us. From bustling cities to serene landscapes, our adventures inspire and connect. Let's embark together, creating unforgettable memories.</p>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#">Start Exploring</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel-3.jpg" class="img-fluid" alt="Image" />
+                            <div class="carousel-caption">
+                                <div class="p-3" style="max-width: 900px">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px">Venture Beyond Boundaries</h4>
+                                    <h1 class="display-2 text-capitalize text-white mb-4">Are You Ready to Explore?</h1>
+                                    <p class="mb-5 fs-5">Embark on a global adventure with our tours, discovering vibrant cultures and untouched wilderness. Let's uncover hidden gems one destination at a time</p>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#">Embark on Your Journey</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel-4.jpeg" class="img-fluid" alt="Image" />
+                            <div class="carousel-caption">
+                                <div class="p-3" style="max-width: 900px">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px">Rent Your Adventure</h4>
+                                    <h1 class="display-2 text-capitalize text-white mb-4">Ready for an Escape?</h1>
+                                    <p class="mb-5 fs-5">
+                                        Start your journey with our diverse rental car options. Whether it's adventure, comfort, or a mix, we have the perfect vehicle. From compact city cars to rugged SUVs, explore with ease.
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#">Book Your Ride</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel-5.jpeg" class="img-fluid" alt="Image" />
+                            <div class="carousel-caption">
+                                <div class="p-3" style="max-width: 900px">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px">Unleash Your Wanderlust</h4>
+                                    <h1 class="display-2 text-capitalize text-white mb-4">Experience MoonTour</h1>
+                                    <p class="mb-5 fs-5">
+                                        Explore a world of adventure with MoonTour. From serene landscapes to bustling cities, immerse yourself in culture, history, and natural beauty. With us, travel isn't just a journey; it's exploration.
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#">Start Your Adventure</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel-6.jpeg" class="img-fluid" alt="Image" />
+                            <div class="carousel-caption">
+                                <div class="p-3" style="max-width: 900px">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px">Join Us on an Adventure</h4>
+                                    <h1 class="display-2 text-capitalize text-white mb-4">From Strangers to Friend</h1>
+                                    <p class="mb-5 fs-5">Join MoonTour's open trips for an unforgettable journey. Traverse stunning landscapes and vibrant cities, forging lasting friendships.</p>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#">Sign Up Today</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon btn bg-primary" aria-hidden="false"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                        <span class="carousel-control-next-icon btn bg-primary" aria-hidden="false"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Carousel End -->
+        </div>
+        <div class="container-fluid search-bar position-relative" style="top: -50%; transform: translateY(-50%)">
+            <div class="container">
+                <div class="position-relative rounded-pill w-100 mx-auto p-5" style="background: rgba(125, 143, 105, 0.5)">
+                    <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Bromo" />
+                    <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute me-2" style="top: 50%; right: 46px; transform: translateY(-50%)">Search</button>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- About Start -->
+        <div class="container-fluid about py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="h-100" style="border: 50px solid; border-color: transparent #e1f0da transparent #e1f0da">
+                            <img src="img/about-img.jpeg" class="img-fluid w-100 h-100" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-7" style="background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(img/about-img-1.png)">
+                        <h5 class="section-about-title pe-3">About Us</h5>
+                        <h1 class="mb-4">Welcome to <span class="text-primary">MoonTour</span></h1>
+                        <p class="mb-4">
+                            MoonTour, your ultimate gateway to exploring the beauty of Malang and its surrounding areas. We specialize in providing top-notch car rental services and organizing memorable open trips to the most sought-after
+                            tourist destinations. Our mission is to make your travel experience in Malang and its environs as enjoyable and hassle-free as possible.
+                        </p>
+                        <p class="mb-4">
+                            From the comfort of our latest model vehicles to the thrill of discovering new places with our open trips, we cater to every aspect of your travel needs. Our team is dedicated to ensuring that every journey with
+                            MoonTour is not just a trip, but an unforgettable adventure.
+                        </p>
+                        <div class="row gy-2 gx-4 mb-4">
+                            <div class="col-sm-6">
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Comfortable and Modern Vehicles</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Expertly Planned Open Trips</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Personalized Travel Experiences</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>24/7 Customer Support</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Flexible Booking Options</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Safe and Sanitized Vehicles</p>
+                            </div>
+                        </div>
+                        <!-- <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Explore with MoonTour</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <div class="container-fluid bg-light service py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px">
+                    <h5 class="section-title px-3">Our Services</h5>
+                    <h1 class="mb-0">Explore Our Offerings</h1>
+                </div>
+                <div class="row g-4">
+                    <!-- Car Rental Service -->
+                    <div class="col-lg-6">
+                        <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
+                            <div class="service-content text-end">
+                                <h5 class="mb-4">Car Rental</h5>
+                                <p class="mb-0">Experience unparalleled freedom with our car rental service. Choose from a wide range of vehicles to explore your destination at your own pace.</p>
+                            </div>
+                            <div class="service-icon p-4">
+                                <i class="fa fa-car fa-4x text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Motor Rental Service -->
+                    <div class="col-lg-6">
+                        <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                            <div class="service-icon p-4">
+                                <i class="fa fa-motorcycle fa-4x text-primary"></i>
+                            </div>
+                            <div class="service-content">
+                                <h5 class="mb-4">Motor Rental</h5>
+                                <p class="mb-0">Experience the thrill of the road with our motor rental service. Perfect for adventurers seeking speed and flexibility.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bus Rental Service -->
+                    <div class="col-lg-6">
+                        <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
+                            <div class="service-content text-end">
+                                <h5 class="mb-4">Bus Damri</h5>
+                                <p class="mb-0">Travel in comfort and style with our bus rental service. Ideal for groups looking for a seamless travel experience.</p>
+                            </div>
+                            <div class="service-icon p-4">
+                                <i class="fa fa-bus fa-4x text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Angkot Rental Service -->
+                    <div class="col-lg-6">
+                        <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                            <div class="service-icon p-4">
+                                <i class="fa fa-taxi fa-4x text-primary"></i>
+                            </div>
+                            <div class="service-content">
+                                <h5 class="mb-4">Angkot Rental</h5>
+                                <p class="mb-0">Navigate through the bustling streets with ease using our angkot rental service. A local favorite for getting around.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Travel Guide Service -->
+                    <div class="col-lg-6">
+                        <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
+                            <div class="service-content text-end">
+                                <h5 class="mb-4">Travel Guide</h5>
+                                <p class="mb-0">Let our travel guides lead you on an unforgettable journey. Discover hidden gems and immerse yourself in the local culture.</p>
+                            </div>
+                            <div class="service-icon p-4">
+                                <i class="fa fa-user fa-4x text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Open Trip Service -->
+                    <div class="col-lg-6">
+                        <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                            <div class="service-icon p-4">
+                                <i class="fa fa-users fa-4x text-primary"></i>
+                            </div>
+                            <div class="service-content">
+                                <h5 class="mb-4">Open Trips</h5>
+                                <p class="mb-0">Join our open trips and meet fellow travelers. Discover new places, share experiences, and create memories that last a lifetime.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Additional services can follow the same pattern -->
+                </div>
+                <div class="col-12 text-center">
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-4" href="services.html">Discover More Services</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services End -->
+
+        <!-- Destination Start -->
+        <div class="container-fluid destination py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px">
+                    <h5 class="section-title px-3">Destination</h5>
+                    <h1 class="mb-0">Popular Destination</h1>
+                </div>
+                <div class="tab-class text-center">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
+                                <span class="text-dark" style="width: 150px">All</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
+                                <span class="text-dark" style="width: 150px">Pantai</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
+                                <span class="text-dark" style="width: 150px">Gunung</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-4">
+                                <span class="text-dark" style="width: 150px">Bukit</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
+                                <span class="text-dark" style="width: 150px">Air Terjun</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-6">
+                                <span class="text-dark" style="width: 150px">Atraksi</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-7">
+                                <span class="text-dark" style="width: 150px">Sumber</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-xl-8">
+                                    <div class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img/pantai-2.jpg" alt="" />
+                                                <div class="destination-overlay p-4">
+                                                    <h4 class="text-white mb-2 mt-3">Pantai Balekambang</h4>
+                                                    <a href="services.html" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img/pantai-4.jpg" alt="" />
+                                                <div class="destination-overlay p-4">
+                                                    <h4 class="text-white mb-2 mt-3">Pantai Teluk Asmara</h4>
+                                                    <a href="services.html" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img/gunung-3.jpg" alt="" />
+                                                <div class="destination-overlay p-4">
+                                                    <h4 class="text-white mb-2 mt-3">Gunung Semeru</h4>
+                                                    <a href="services.html" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img/bukit-6.jpg" alt="" />
+                                                <div class="destination-overlay p-4">
+                                                    <h4 class="text-white mb-2 mt-3">Bukit Kuneer</h4>
+                                                    <a href="services.html" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="destination-img h-100">
+                                        <img class="img-fluid rounded w-100 h-100" src="img/atraksi-10.jpg" style="object-fit: cover; min-height: 300px" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Jatim Park 3</h4>
+                                            <a href="services.html" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/coban-3.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Coban Sewu</h4>
+                                            <a href="services.html" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-6.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Museum Angkut</h4>
+                                            <a href="services.html" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/sumber-1.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Sumber Maroon</h4>
+                                            <a href="services.html" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/pantai-1.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Pantai Balekambang</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/pantai-2.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Pantai Batu Bekung</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/pantai-3.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Pantai Bajul Mati</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/pantai-4.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Pantai Teluk Asmara</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/pantai-5.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Pantai Clungup</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/pantai-6.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Pantai Sendang Biru</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/pantai-7.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Pantai Watu Leter</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/pantai-8.jpeg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Pantai Gatra</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/gunung-1.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Gunung Panderman</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/gunung-2.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Gunung Buthak</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/gunung-3.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Gunung Semeru</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/gunung-4.jpeg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Gunung Bromo</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/gunung-5.jpeg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Gunung Arjuno</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/bukit-1.jpeg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Bukit Kuneer</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/bukit-2.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Bukit Bulu</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/bukit-3.jpeg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Bukit Nirwana</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/bukit-5.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Bukit Teletubbies</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/bukit-4.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Bukit Budug Asu</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/coban-1.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Coban Pelangi</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/coban-2.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Coban Jahe</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/coban-3.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Coban Sewu</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/coban-4.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Coban Sumber Pitu</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/coban-5.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Coban Ciblungan</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/coban-6.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Coban Baung</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/coban-7.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Coban Jodo</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/coban-8.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Coban Siuk</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/coban-9.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Coban Supit Urang Pujon</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/coban-10.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Coban Bidadari</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/coban-11.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Coban Sisir</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/coban-12.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Coban Sumber Pitu Pujon</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/coban-13.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Coban Nirwana</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-6" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-1.jpeg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Flora Wisata San Terra</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-2.png" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Brakseng</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-3.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Kampung Jodipan Warna-Warni</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-4.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Batu Night Spectacular (BNS)</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-5.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Batu Flower Garden (BALOGA)</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-6.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Museum Angkut</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-7.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Eco Green Park</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-8.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Jatim Park 1</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-9.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Jatim Park 2</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-10.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Jatim Park 3</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-11.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Lumbung Strawberry Batu</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-12.jpeg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Taman Rekreasi Selecta</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-13.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Kampung Biru Arema</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-14.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Taman Labirin Coban Rondo</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-15.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Wendit Waterpark</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-16.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Hawai Waterpark</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-17.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Malang Night Paradise</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-18.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Malang Smart Arena</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-19.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Taman Langit Gunung Banyak</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/atraksi-20.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Boon Pring</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-7" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/sumber-1.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Sumber Maroon</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/sumber-2.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Sumber Jenon</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/sumber-r.jpeg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">GSumber Wendit Lanang</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/sumber-4.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Sumber Sirah</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/sumber-5.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Sumber Taman</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/sumber-6.jpeg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Sumber Krabyakan</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/sumber-7.jpg" alt="" />
+                                        <div class="destination-overlay p-4">
+                                            <h4 class="text-white mb-2 mt-3">Sumber Umbulan</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Destination End -->
+
+        <!-- Package RENT Start -->
+        <div class="container-fluid packages py-5 bg-light">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px">
+                    <h5 class="section-title px-3">Rent</h5>
+                    <h1 class="mb-0">Awesome Vehicle</h1>
+                </div>
+                <div class="packages-carousel owl-carousel">
+                    <!-- Toyota Avanza -->
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img src="img/mobil-1.png" class="img-fluid w-100 rounded-top" alt="Toyota Avanza" />
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-2">Toyota Avanza</h5>
+                                <ul class="nav nav-tabs mt-4" id="myTabAvanza" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="spesifikasi-Avanza-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-Avanza" type="button" role="tab" aria-controls="spesifikasi-Avanza" aria-selected="true">
+                                            Spesifikasi
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link service"
+                                            id="detail-harga-Avanza-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#detail-harga-Avanza"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="detail-harga-Avanza"
+                                            aria-selected="false"
+                                        >
+                                            Detail Harga
+                                        </button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content mt-2" id="myTabContentAvanza">
+                                    <div class="tab-pane fade show active" id="spesifikasi-Avanza" role="tabpanel" aria-labelledby="spesifikasi-Avanza-tab">
+                                        <ul class="motor-specs">
+                                            <li><strong>Mesin:</strong> 1.5L DOHC</li>
+                                            <li><strong>Tenaga:</strong> 104 PS @ 6000 RPM</li>
+                                            <li><strong>Torsi:</strong> 136 Nm @ 4200 RPM</li>
+                                            <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="detail-harga-Avanza" role="tabpanel" aria-labelledby="detail-harga-Avanza-tab">
+                                        <div class="detail-harga-container">
+                                            <h6>Sopir+BBM</h6>
+                                            <li>Rp1.000.000/ Fullday.</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4" id="readMoreBtn">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4" id="bookNowBtn">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grand New Innova -->
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img src="img/mobil-2.jpeg" class="img-fluid w-100 rounded-top" alt="Grand New Innova" />
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-2">Grand New Innova</h5>
+                                <ul class="nav nav-tabs mt-4" id="myTabInnova" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="spesifikasi-Innova-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-Innova" type="button" role="tab" aria-controls="spesifikasi-Innova" aria-selected="true">
+                                            Spesifikasi
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link service"
+                                            id="detail-harga-Innova-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#detail-harga-Innova"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="detail-harga-Innova"
+                                            aria-selected="false"
+                                        >
+                                            Detail Harga
+                                        </button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content mt-2" id="myTabContentInnova">
+                                    <div class="tab-pane fade show active" id="spesifikasi-Innova" role="tabpanel" aria-labelledby="spesifikasi-Innova-tab">
+                                        <ul class="motor-specs">
+                                            <li><strong>Mesin:</strong> 2.4L DOHC</li>
+                                            <li><strong>Tenaga:</strong> 149 PS @ 3400 RPM</li>
+                                            <li><strong>Torsi:</strong> 360 Nm @ 1200-2600 RPM</li>
+                                            <li><strong>Bahan Bakar:</strong> Diesel</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="detail-harga-Innova" role="tabpanel" aria-labelledby="detail-harga-Innova-tab">
+                                        <div class="detail-harga-container">
+                                            <h6>Sopir+BBM</h6>
+                                            <li>Rp1.200.000/ Fullday.</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fortuner VRZ -->
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img src="img/mobil-3.jpeg" class="img-fluid w-100 rounded-top" alt="Fortuner VRZ" />
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-2">Fortuner VRZ</h5>
+                                <ul class="nav nav-tabs mt-4" id="myTabFortuner" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link active"
+                                            id="spesifikasi-Fortuner-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#spesifikasi-Fortuner"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="spesifikasi-Fortuner"
+                                            aria-selected="true"
+                                        >
+                                            Spesifikasi
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link service"
+                                            id="detail-harga-Fortuner-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#detail-harga-Fortuner"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="detail-harga-Fortuner"
+                                            aria-selected="false"
+                                        >
+                                            Detail Harga
+                                        </button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content mt-2" id="myTabContentFortuner">
+                                    <div class="tab-pane fade show active" id="spesifikasi-Fortuner" role="tabpanel" aria-labelledby="spesifikasi-Fortuner-tab">
+                                        <ul class="motor-specs">
+                                            <li><strong>Mesin:</strong> 2.8L DOHC</li>
+                                            <li><strong>Tenaga:</strong> 204 PS @ 3400 RPM</li>
+                                            <li><strong>Torsi:</strong> 500 Nm @ 1600-2800 RPM</li>
+                                            <li><strong>Bahan Bakar:</strong> Diesel</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="detail-harga-Fortuner" role="tabpanel" aria-labelledby="detail-harga-Fortuner-tab">
+                                        <div class="detail-harga-container">
+                                            <h6>Sopir+BBM</h6>
+                                            <li>Rp1.500.000/ Fullday.</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Honda Beat FI -->
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img src="img/motor-1.jpg" class="img-fluid w-100 rounded-top" alt="Honda Beat FI" />
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-2">Honda Beat FI</h5>
+                                <ul class="nav nav-tabs mt-4" id="myTabBeatFI" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="spesifikasi-BeatFI-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-BeatFI" type="button" role="tab" aria-controls="spesifikasi-BeatFI" aria-selected="true">
+                                            Spesifikasi
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link service"
+                                            id="detail-harga-BeatFI-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#detail-harga-BeatFI"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="detail-harga-BeatFI"
+                                            aria-selected="false"
+                                        >
+                                            Detail Harga
+                                        </button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content mt-2" id="myTabContentBeatFI">
+                                    <div class="tab-pane fade show active" id="spesifikasi-BeatFI" role="tabpanel" aria-labelledby="spesifikasi-BeatFI-tab">
+                                        <ul class="motor-specs">
+                                            <li><strong>Mesin:</strong> 110 cc SOHC</li>
+                                            <li><strong>Tenaga:</strong> 8.8 PS @ 7500 RPM</li>
+                                            <li><strong>Torsi:</strong> 9.3 Nm @ 5500 RPM</li>
+                                            <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="detail-harga-BeatFI" role="tabpanel" aria-labelledby="detail-harga-BeatFI-tab">
+                                        <div class="detail-harga-container">
+                                            <h6>Tanpa Sopir + BBM</h6>
+                                            <li>Rp100.000/ Hari</li>
+                                            <li>Rp600.000/ Minggu</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Honda Scoopy -->
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img src="img/motor-2.jpeg" class="img-fluid w-100 rounded-top" alt="Honda Scoopy" />
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-2">Honda Scoopy</h5>
+                                <ul class="nav nav-tabs mt-4" id="myTabScoopy" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="spesifikasi-Scoopy-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-Scoopy" type="button" role="tab" aria-controls="spesifikasi-Scoopy" aria-selected="true">
+                                            Spesifikasi
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link service"
+                                            id="detail-harga-Scoopy-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#detail-harga-Scoopy"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="detail-harga-Scoopy"
+                                            aria-selected="false"
+                                        >
+                                            Detail Harga
+                                        </button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content mt-2" id="myTabContentScoopy">
+                                    <div class="tab-pane fade show active" id="spesifikasi-Scoopy" role="tabpanel" aria-labelledby="spesifikasi-Scoopy-tab">
+                                        <ul class="motor-specs">
+                                            <li><strong>Mesin:</strong> 110 cc SOHC</li>
+                                            <li><strong>Tenaga:</strong> 8.8 PS @ 7500 RPM</li>
+                                            <li><strong>Torsi:</strong> 9.3 Nm @ 5500 RPM</li>
+                                            <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="detail-harga-Scoopy" role="tabpanel" aria-labelledby="detail-harga-Scoopy-tab">
+                                        <div class="detail-harga-container">
+                                            <h6>Tanpa Sopir + BBM</h6>
+                                            <li>Rp110.000/ Hari</li>
+                                            <li>Rp660.000/ Minggu</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Yamaha NMAX 155 -->
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img src="img/motor-3.jpg" class="img-fluid w-100 rounded-top" alt="Yamaha NMAX 155" />
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-2">Yamaha NMAX 155</h5>
+                                <ul class="nav nav-tabs mt-4" id="myTabNMAX" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="spesifikasi-NMAX-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi-NMAX" type="button" role="tab" aria-controls="spesifikasi-NMAX" aria-selected="true">
+                                            Spesifikasi
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link service" id="detail-harga-NMAX-tab" data-bs-toggle="tab" data-bs-target="#detail-harga-NMAX" type="button" role="tab" aria-controls="detail-harga-NMAX" aria-selected="false">
+                                            Detail Harga
+                                        </button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content mt-2" id="myTabContentNMAX">
+                                    <div class="tab-pane fade show active" id="spesifikasi-NMAX" role="tabpanel" aria-labelledby="spesifikasi-NMAX-tab">
+                                        <ul class="motor-specs">
+                                            <li><strong>Mesin:</strong> 155 cc SOHC</li>
+                                            <li><strong>Tenaga:</strong> 15.4 PS @ 8000 RPM</li>
+                                            <li><strong>Torsi:</strong> 13.9 Nm @ 6500 RPM</li>
+                                            <li><strong>Bahan Bakar:</strong> Bensin</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="detail-harga-NMAX" role="tabpanel" aria-labelledby="detail-harga-NMAX-tab">
+                                        <div class="detail-harga-container">
+                                            <h6>Tanpa Sopir + BBM</h6>
+                                            <li>Rp200.000/ Hari</li>
+                                            <li>Rp1.200.000/ Minggu</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Package Rent END -->
+
+        <!-- Packages TRIP Start -->
+        <div class="container-fluid packages py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px">
+                    <h5 class="section-title px-3">Packages</h5>
+                    <h1 class="mb-0">Awesome Packages Trip</h1>
+                </div>
+                <div class="packages-carousel owl-carousel">
+                    <!-- Bromo Tour -->
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img src="img/trip-1.jpg" class="img-fluid w-100 rounded-top" alt="Image" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Bromo Tour</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>1 day</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>1-8 persons</small>
+                            </div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Bromo Tour</h5>
+                                <small class="text-uppercase">Our Trip</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Discover Mount Bromo's beauty with our tour package. Experience the mesmerizing sunrise, trek through the Sea of Sand, and witness stunning views.</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jatim Park Trip -->
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img src="img/trip-2.png" class="img-fluid w-100 rounded-top" alt="Image" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Jatim Park Trip</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>2 days</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>1 person</small>
+                            </div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Jatim Park Trip</h5>
+                                <small class="text-uppercase">Our Trip</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Explore the thrilling attractions at Jatim Park. Enjoy a fun-filled 2-day adventure with various rides, educational exhibits, and family-friendly activities.</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pantai Trip -->
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img src="img/trip-3.jpg" class="img-fluid w-100 rounded-top" alt="Image" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Pantai Trip</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>1 day</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>1 person</small>
+                            </div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Pantai Trip</h5>
+                                <small class="text-uppercase">Our Trip</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Enjoy a relaxing day at one of the beautiful beaches. Sunbathe, swim, and unwind with the serene ocean views.</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kampoeng Kayutangan Heritage Tour -->
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img src="img/trip-4.jpg" class="img-fluid w-100 rounded-top" alt="Image" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Kampoeng Kayutangan Heritage Tour</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>1 day</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>1-7 persons</small>
+                            </div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Kampoeng Kayutangan Heritage Tour</h5>
+                                <small class="text-uppercase">Our Trip</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Explore the historical Kampoeng Kayutangan and immerse yourself in its rich heritage. Discover the local culture, traditional houses, and vibrant community life.</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Packages TRIP End -->
+
+        <!-- Gallery Start -->
+        <div class="container-fluid gallery py-5 my-5 bg-light">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px">
+                <h5 class="section-title px-3">Our Gallery</h5>
+                <h1 class="mb-4">Tourism & Traveling Gallery.</h1>
+                <p class="mb-0">
+                    Explore our Tourism & Traveling Gallery, showcasing the beauty of destinations around the world. From breathtaking landscapes to vibrant cultures, our gallery captures the essence of travel and adventure. Get inspired
+                    for your next journey!
+                </p>
+            </div>
+
+            <div class="tab-class text-center">
+                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#GalleryTab-1">
+                            <span class="text-dark" style="width: 150px">MoonTour</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="GalleryTab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-2">
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                                <div class="gallery-item h-100">
+                                    <img src="img/pantai-1.jpg" class="img-fluid w-100 h-100 rounded" alt="Image" />
+                                    <div class="gallery-content">
+                                        <div class="gallery-info">
+                                            <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-plus-icon">
+                                        <a href="img/gunung-1.jpg" data-lightbox="gallery-1" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="gallery-item h-100">
+                                    <img src="img/bukit-1.jpeg" class="img-fluid w-100 h-100 rounded" alt="Image" />
+                                    <div class="gallery-content">
+                                        <div class="gallery-info">
+                                            <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-plus-icon">
+                                        <a href="img/sumber-1.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                                <div class="gallery-item h-100">
+                                    <img src="img/atraksi-1.jpeg" class="img-fluid w-100 h-100 rounded" alt="Image" />
+                                    <div class="gallery-content">
+                                        <div class="gallery-info">
+                                            <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-plus-icon">
+                                        <a href="img/coban-1.jpg" data-lightbox="gallery-3" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="gallery-item h-100">
+                                    <img src="img/gunung-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image" />
+                                    <div class="gallery-content">
+                                        <div class="gallery-info">
+                                            <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-plus-icon">
+                                        <a href="img/gallery-4.jpg" data-lightbox="gallery-4" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                                <div class="gallery-item h-100">
+                                    <img src="img/coban-10.jpg" class="img-fluid w-100 h-100 rounded" alt="Image" />
+                                    <div class="gallery-content">
+                                        <div class="gallery-info">
+                                            <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-plus-icon">
+                                        <a href="img/gallery-5.jpg" data-lightbox="gallery-5" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                                <div class="gallery-item h-100">
+                                    <img src="img/sumber-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image" />
+                                    <div class="gallery-content">
+                                        <div class="gallery-info">
+                                            <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-plus-icon">
+                                        <a href="img/gallery-6.jpg" data-lightbox="gallery-6" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                                <div class="gallery-item h-100">
+                                    <img src="img/atraksi-13.jpg" class="img-fluid w-100 h-100 rounded" alt="Image" />
+                                    <div class="gallery-content">
+                                        <div class="gallery-info">
+                                            <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-plus-icon">
+                                        <a href="img/gallery-7.jpg" data-lightbox="gallery-7" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="gallery-item h-100">
+                                    <img src="img/sumber-6.jpeg" class="img-fluid w-100 h-100 rounded" alt="Image" />
+                                    <div class="gallery-content">
+                                        <div class="gallery-info">
+                                            <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-plus-icon">
+                                        <a href="img/gallery-8.jpg" data-lightbox="gallery-8" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                                <div class="gallery-item h-100">
+                                    <img src="img/bukit-4.jpg" class="img-fluid w-100 h-100 rounded" alt="Image" />
+                                    <div class="gallery-content">
+                                        <div class="gallery-info">
+                                            <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-plus-icon">
+                                        <a href="img/gallery-9.jpg" data-lightbox="gallery-9" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="gallery-item h-100">
+                                    <img src="img/bukit-3.jpeg" class="img-fluid w-100 h-100 rounded" alt="Image" />
+                                    <div class="gallery-content">
+                                        <div class="gallery-info">
+                                            <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-plus-icon">
+                                        <a href="img/gallery-10.jpg" data-lightbox="gallery-10" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery End -->
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid testimonial py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px">
+                    <h5 class="section-title px-3">Testimonial</h5>
+                    <h1 class="mb-0">Our Clients Say!!!</h1>
+                </div>
+                <div class="testimonial-carousel owl-carousel">
+                    <div class="testimonial-item text-center rounded pb-4">
+                        <div class="testimonial-comment bg-light rounded p-4">
+                            <p class="text-center mb-5">
+                                "Moontour telah memberikan pengalaman yang tak terlupakan. Layanan rental motor dan tour guide mereka sangat membantu dalam menjelajahi keindahan Indonesia. Open trip yang mereka adakan juga sangat menarik,
+                                memungkinkan kami untuk bertemu dengan orang-orang baru dari berbagai daerah di Indonesia. Terima kasih Moontour!"
+                            </p>
+                        </div>
+                        <div class="testimonial-img p-1">
+                            <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle" alt="Image" />
+                        </div>
+                        <div style="margin-top: -35px">
+                            <h5 class="mb-0">Iwan Setiawan</h5>
+                            <p class="mb-0">Jakarta, Indonesia</p>
+                            <div class="d-flex justify-content-center">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center rounded pb-4">
+                        <div class="testimonial-comment bg-light rounded p-4">
+                            <p class="text-center mb-5">
+                                "Saya sangat puas dengan layanan Moontour. Mereka menyediakan motor yang nyaman dan tour guide yang ramah. Open trip mereka sangat menarik, memungkinkan saya untuk mengenal lebih dekat budaya dan keindahan
+                                Indonesia. Saya akan merekomendasikan Moontour kepada teman-teman saya."
+                            </p>
+                        </div>
+                        <div class="testimonial-img p-1">
+                            <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle" alt="Image" />
+                        </div>
+                        <div style="margin-top: -35px">
+                            <h5 class="mb-0">Ani Rahayu</h5>
+                            <p class="mb-0">Bandung, Indonesia</p>
+                            <div class="d-flex justify-content-center">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center rounded pb-4">
+                        <div class="testimonial-comment bg-light rounded p-4">
+                            <p class="text-center mb-5">
+                                "Pengalaman menggunakan layanan Moontour sangat memuaskan. Motor yang disediakan dalam kondisi baik dan tour guide yang informatif membuat perjalanan kami menjadi lebih menyenangkan. Open trip mereka juga
+                                sangat menarik, memberikan kesempatan untuk bertemu dan berinteraksi dengan orang-orang dari berbagai daerah di Indonesia."
+                            </p>
+                        </div>
+                        <div class="testimonial-img p-1">
+                            <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle" alt="Image" />
+                        </div>
+                        <div style="margin-top: -35px">
+                            <h5 class="mb-0">Qurrota</h5>
+                            <p class="mb-0">Surabaya, Indonesia</p>
+                            <div class="d-flex justify-content-center">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center rounded pb-4">
+                        <div class="testimonial-comment bg-light rounded p-4">
+                            <p class="text-center mb-5">
+                                "Moontour telah memberikan pengalaman yang luar biasa. Layanan rental motor dan tour guide mereka sangat membantu dalam menjelajahi keindahan Indonesia. Open trip yang mereka adakan juga sangat menarik,
+                                memungkinkan kami untuk bertemu dengan orang-orang baru dari berbagai daerah di Indonesia. Terima kasih Moontour!"
+                            </p>
+                        </div>
+                        <div class="testimonial-img p-1">
+                            <img src="img/testimonial-4.jpg" class="img-fluid rounded-circle" alt="Image" />
+                        </div>
+                        <div style="margin-top: -35px">
+                            <h5 class="mb-0">Lintang Angraini</h5>
+                            <p class="mb-0">Gresik, Indonesia</p>
+                            <div class="d-flex justify-content-center">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- Subscribe Start -->
+        <div class="container-fluid subscribe py-5">
+            <div class="container text-center py-5">
+                <div class="mx-auto text-center" style="max-width: 900px">
+                    <h5 class="subscribe-title px-3">Subscribe</h5>
+                    <h1 class="text-white mb-4">Our Newsletter</h1>
+                    <p class="text-white mb-5">Stay updated with the latest news, travel tips, and special offers from Moontour. Join our newsletter and never miss an update!</p>
+                    <div class="position-relative mx-auto">
+                        <input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="email" placeholder="Your email" />
+                        <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subscribe End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Get In Touch</h4>
+                            <a href=""><i class="fas fa-home me-2"></i> Panorama Garden, Malang</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> MoonTour@gmail.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +62 812 345 678</a>
+                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +031 2345</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-white me-2"></i>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Company</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> About</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Careers</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Blog</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Press</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Gift Cards</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Magazine</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Support</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Contact</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Legal Notice</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Terms and Conditions</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Sitemap</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Cookie policy</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <div class="row gy-3 gx-2 mb-4">
+                                <div class="col-xl-6">
+                                    <form>
+                                        <div class="form-floating">
+                                            <select class="form-select bg-dark border" id="select1">
+                                                <option value="1">Arabic</option>
+                                                <option value="2">German</option>
+                                                <option value="3">Greek</option>
+                                                <option value="3">New York</option>
+                                            </select>
+                                            <label for="select1">English</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-xl-6">
+                                    <form>
+                                        <div class="form-floating">
+                                            <select class="form-select bg-dark border" id="select1">
+                                                <option value="1">USD</option>
+                                                <option value="2">EUR</option>
+                                                <option value="3">INR</option>
+                                                <option value="3">GBP</option>
+                                            </select>
+                                            <label for="select1">$</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <h4 class="text-white mb-3">Payments</h4>
+                            <div class="footer-bank-card">
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-amex fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-visa fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fas fa-credit-card fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-mastercard fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-paypal fa-2x"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-cc-discover fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright text-body py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-end mb-md-0"><i class="fas fa-copyright me-2"></i><a class="text-white" href="#">MoonTour</a>, All right reserved.</div>
+                    <div class="col-md-6 text-center text-md-start">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="text-white"> Lintang Angraini N.L.R</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+        <!-- js -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const tabLinks = document.querySelectorAll('.nav-link');
+
+                tabLinks.forEach(function (link) {
+                    link.addEventListener('click', function () {
+                        const tabId = link.getAttribute('href').replace('#', '');
+                        const tabPanes = document.querySelectorAll('.tab-pane');
+                        tabPanes.forEach(function (pane) {
+                            pane.classList.remove('show');
+                        });
+                        const activePane = document.getElementById(tabId);
+                        activePane.classList.add('show');
+                    });
+                });
+
+                // Menangani klik pada tombol "Detail Harga"
+                const detailHargaButton = document.getElementById('tab-2-tab');
+                detailHargaButton.addEventListener('click', function (event) {
+                    event.stopPropagation(); // Mencegah event bubbling ke atas
+                    const tabPanes = document.querySelectorAll('.tab-pane');
+                    tabPanes.forEach(function (pane) {
+                        pane.classList.remove('show');
+                    });
+                    const detailHargaPane = document.getElementById('tab-2');
+                    detailHargaPane.classList.add('show');
+                });
+
+                // Menangani klik pada tombol "Spesifikasi"
+                const spesifikasiButton = document.getElementById('tab-1-tab');
+                spesifikasiButton.addEventListener('click', function (event) {
+                    event.stopPropagation(); // Mencegah event bubbling ke atas
+                    const tabPanes = document.querySelectorAll('.tab-pane');
+                    tabPanes.forEach(function (pane) {
+                        pane.classList.remove('show');
+                    });
+                    const spesifikasiPane = document.getElementById('tab-1');
+                    spesifikasiPane.classList.add('show');
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                document.getElementById('readMoreBtn').addEventListener('click', function (event) {
+                    event.preventDefault();
+                    // Logic to handle "Read More" click
+                    window.location.href = 'link_to_read_more_page.html'; // Ganti dengan URL yang sesuai
+                });
+
+                document.getElementById('bookNowBtn').addEventListener('click', function (event) {
+                    event.preventDefault();
+                    // Logic to handle "Book Now" click
+                    window.location.href = 'link_to_booking_page.html'; // Ganti dengan URL yang sesuai
+                });
+            });
+        </script>
+    </body>
+</html>

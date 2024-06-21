@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Admin - MoonTour</title>
+        <link rel="stylesheet" href="../css/styles.min.css" />
+        <!-- Icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/1.0.0/css/themify-icons.css" />
+
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" />
+        <style>
+            .custom-sidebar {
+                background-color: #ffffff;
+            }
+            .back-logo {
+                background-color: #e1f0da;
+            }
+            .logo-img {
+                color: white;
+            }
+            .app-header {
+                background-color: #e1f0da;
+            }
+            .nav-icon-hover i {
+                color: #435334;
+            }
+            .cont-tinggi {
+                height: auto;
+            }
+            .text-center th {
+                text-align: center;
+            }
+            .left-sidebar {
+                flex: 0 0 250px; /* Adjust the width of the sidebar as needed */
+            }
+            .body-wrapper {
+                flex: 1;
+                padding-bottom: 260px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--  Body Wrapper -->
+        <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+            <!-- Sidebar Start -->
+            <aside class="left-sidebar">
+                <!-- Sidebar scroll-->
+                <div>
+                    <div class="brand-logo d-flex align-items-center justify-content-between back-logo">
+                        <a href="./admin.htmls" class="text-nowrap logo-img">
+                            <h1 class="m-0">MoonTour</h1>
+                        </a>
+                        <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+                            <i class="bi bi-x-lg fs-8"></i>
+                        </div>
+                    </div>
+                    <!-- Sidebar navigation-->
+                    <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+                        <ul id="sidebarnav">
+                            <li class="nav-small-cap">
+                                <i class="bi bi-three-dots nav-small-cap-icon fs-4"></i>
+                                <span class="hide-menu">Dashboard</span>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="./admin.html" aria-expanded="false">
+                                    <span>
+                                        <i class="bi bi-layout-text-sidebar-reverse"></i>
+                                    </span>
+                                    <span class="hide-menu">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="nav-small-cap">
+                                <i class="bi bi-dots nav-small-cap-icon fs-4"></i>
+                                <span class="hide-menu">Home</span>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="#" aria-expanded="false">
+                                    <span>
+                                        <i class="bi bi-folder"></i>
+                                    </span>
+                                    <span class="hide-menu">Data Master</span>
+                                </a>
+                                <ul class="collapse list-unstyled" id="dataMasterSubmenu">
+                                    <li class="sidebar-item">
+                                        <a class="sidebar-link" href="./data-pelanggan.html" aria-expanded="false">
+                                            <span class="hide-menu"> - Data Pelanggan</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a class="sidebar-link" href="./data-admin.html" aria-expanded="false">
+                                            <span class="hide-menu"> - Data Admin</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="./data-transaksi2.html" aria-expanded="false">
+                                    <span>
+                                        <i class="bi bi-credit-card"></i>
+                                    </span>
+                                    <span class="hide-menu">Data transaksi</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="./data-artikel.html" aria-expanded="false">
+                                    <span>
+                                        <i class="bi bi-newspaper"></i>
+                                    </span>
+                                    <span class="hide-menu">Data Artikel</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="./data-produk.html" aria-expanded="false">
+                                    <span>
+                                        <i class="bi bi-box-seam"></i>
+                                    </span>
+                                    <span class="hide-menu">Data Produk</span>
+                                </a>
+                            </li>
+                            <li class="nav-small-cap">
+                                <i class="bi bi-dots nav-small-cap-icon fs-4"></i>
+                                <span class="hide-menu">AUTH</span>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="./register.html" aria-expanded="false">
+                                    <span>
+                                        <i class="bi bi-box-arrow-right"></i>
+                                    </span>
+                                    <span class="hide-menu">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- End Sidebar navigation -->
+                </div>
+                <!-- End Sidebar scroll-->
+            </aside>
+            <!--  Sidebar End -->
+            <!--  Main wrapper -->
+            <div class="body-wrapper" style="background-color: #f4f5f6">
+                <!--  Header Start -->
+                <header class="app-header">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <ul class="navbar-nav">
+                            <li class="nav-item d-block d-xl-none">
+                                <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                                    <i class="bi bi-list"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+                                    <i class="bi bi-bell"></i>
+                                    <div class="notification bg-primary rounded-circle"></div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+                            <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="../images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle" />
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                                        <div class="message-body">
+                                            <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                                                <i class="bi bi-user fs-6"></i>
+                                                <p class="mb-0 fs-3">My Profile</p>
+                                            </a>
+                                            <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                                                <i class="bi bi-mail fs-6"></i>
+                                                <p class="mb-0 fs-3">My Account</p>
+                                            </a>
+                                            <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                                                <i class="bi bi-list-check fs-6"></i>
+                                                <p class="mb-0 fs-3">My Task</p>
+                                            </a>
+                                            <a href="./authentication-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+
+                <!-- Content STart -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card mt-4">
+                                <div class="card-body">
+                                    <h4 class="card-title">Data Pelanggan</h4>
+
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>No</th>
+                                                    <th>Nama</th>
+                                                    <th>Email</th>
+                                                    <th>No Handphone</th>
+                                                    <th>Alamat</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="table-body">
+                                                <!-- Data will be inserted here via JavaScript -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <span id="entries-info">Showing 1 to 5 of 11 entries</span>
+                                        <div>
+                                            <button class="btn btn-primary" id="prev-button">Previous</button>
+                                            <button class="btn btn-primary" id="next-button">Next</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content End -->
+            </div>
+        </div>
+
+        <script src="../libs/jquery/dist/jquery.min.js"></script>
+        <script src="../libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../js/sidebarmenu.js"></script>
+        <script src="../js/app.min.js"></script>
+        <script src="../libs/apexcharts/dist/apexcharts.min.js"></script>
+        <script src="../libs/simplebar/dist/simplebar.js"></script>
+        <script src="../js/dashboard.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const tableData = [
+                    { no: 1, nama: 'pelanggan1', email: 'pelanggan1@gmail.com', noHandphone: '081245134256', alamat: 'Surabaya' },
+                    { no: 2, nama: 'pelanggan2', email: 'pelanggan2@gmail.com', noHandphone: '081234132433', alamat: 'Solo' },
+                    { no: 3, nama: 'pelanggan3', email: 'pelanggan3@gmail.com', noHandphone: '081234132432', alamat: 'Solo' },
+                    { no: 4, nama: 'CustFai', email: 'cust@gmail.com', noHandphone: '082142800106', alamat: 'Surabaya' },
+                    { no: 5, nama: 'pelanggan4', email: 'pelanggan4@gmail.com', noHandphone: '081234132431', alamat: 'Jogja' },
+                    { no: 6, nama: 'pelanggan5', email: 'pelanggan5@gmail.com', noHandphone: '081234132430', alamat: 'Bandung' },
+                    { no: 7, nama: 'pelanggan6', email: 'pelanggan6@gmail.com', noHandphone: '081234132429', alamat: 'Jakarta' },
+                    { no: 8, nama: 'pelanggan7', email: 'pelanggan7@gmail.com', noHandphone: '081234132428', alamat: 'Malang' },
+                    { no: 9, nama: 'pelanggan8', email: 'pelanggan8@gmail.com', noHandphone: '081234132427', alamat: 'Semarang' },
+                    { no: 10, nama: 'pelanggan9', email: 'pelanggan9@gmail.com', noHandphone: '081234132426', alamat: 'Bali' },
+                    { no: 11, nama: 'pelanggan10', email: 'pelanggan10@gmail.com', noHandphone: '081234132425', alamat: 'Lombok' },
+                ];
+
+                const rowsPerPage = 5;
+                let currentPage = 1;
+                const totalPages = Math.ceil(tableData.length / rowsPerPage);
+
+                function renderTable(page) {
+                    const start = (page - 1) * rowsPerPage;
+                    const end = start + rowsPerPage;
+                    const paginatedData = tableData.slice(start, end);
+
+                    const tableBody = document.getElementById('table-body');
+                    tableBody.innerHTML = '';
+
+                    paginatedData.forEach((item) => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${item.no}</td>
+                            <td>${item.nama}</td>
+                            <td>${item.email}</td>
+                            <td>${item.noHandphone}</td>
+                            <td>${item.alamat}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
+
+                    document.getElementById('entries-info').textContent = `Showing ${start + 1} to ${end > tableData.length ? tableData.length : end} of ${tableData.length} entries`;
+                }
+
+                document.getElementById('prev-button').addEventListener('click', () => {
+                    if (currentPage > 1) {
+                        currentPage--;
+                        renderTable(currentPage);
+                    }
+                });
+
+                document.getElementById('next-button').addEventListener('click', () => {
+                    if (currentPage < totalPages) {
+                        currentPage++;
+                        renderTable(currentPage);
+                    }
+                });
+
+                renderTable(currentPage);
+            });
+        </script>
+        <!-- Script search -->
+        <script>
+            function renderTable(page, searchKeyword = '') {
+                const start = (page - 1) * rowsPerPage;
+                const end = start + rowsPerPage;
+                let filteredData = tableData;
+
+                if (searchKeyword) {
+                    filteredData = tableData.filter((item) => {
+                        return Object.values(item).some((value) => value.toString().toLowerCase().includes(searchKeyword.toLowerCase()));
+                    });
+                }
+
+                const paginatedData = filteredData.slice(start, end);
+
+                const tableBody = document.getElementById('table-body');
+                tableBody.innerHTML = '';
+
+                paginatedData.forEach((item) => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                    <td>${item.no}</td>
+                    <td>${item.nama}</td>
+                    <td>${item.email}</td>
+                    <td>${item.noHandphone}</td>
+                    <td>${item.alamat}</td>
+                `;
+                    tableBody.appendChild(row);
+                });
+
+                document.getElementById('entries-info').textContent = `Showing ${start + 1} to ${end > filteredData.length ? filteredData.length : end} of ${filteredData.length} entries`;
+            }
+            document.getElementById('search-input').addEventListener('input', () => {
+                const searchKeyword = document.getElementById('search-input').value.trim();
+                renderTable(1, searchKeyword);
+            });
+        </script>
+    </body>
+</html>

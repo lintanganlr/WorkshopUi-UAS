@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>MoonTour - Sewa Kendaraan dan Open Trip</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">MoonTour</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="article.html" class="nav-item nav-link">Article</a>
+                        <a href="services.html" class="nav-item nav-link ">Services</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="keranjang.html" class="btn-keranjang" style="color: #94a684; font-size: 26px" onclick="window.location.href='keranjang.html'; return false;">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                    <a href="register.html" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-keranjang">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4">Detail Pemesanan</h1>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-white">Detail Pemesanan</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Detail pemesanan start -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-8 order-box mb-3 ">
+                    <h4 class="text-center">Data Pemesanan Cutomer</h4>
+                    <div class="form-group mt-4">
+                        <label for="namaLengkap" style="font-weight: bold; color: black;">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="namaLengkap" value="lintamg">
+                    </div>
+    
+                    <div class="form-group mt-4">
+                        <label for="email" style="font-weight: bold; color: black;">E-mail</label>
+                        <input type="email" class="form-control" id="email" value="lintang@gmail.com">
+                    </div>
+    
+                    <div class="form-group mt-4">
+                        <label for="noHandphone" style="font-weight: bold; color: black;">No Handphone</label>
+                        <input type="text" class="form-control" id="noHandphone" value="08162354561728">
+                    </div>
+    
+                    <div class="form-group mt-4">
+                        <label for="alamat" style="font-weight: bold; color: black;">Alamat</label>
+                        <textarea class="form-control" id="alamat" rows="2">pontianak</textarea>
+                    </div>
+
+                    <div class="form-group mt-4">
+                        <label for="tglPengambilan" style="font-weight: bold; color: black;">Tgl Pemesanan</label>
+                        <input type="date" class="form-control" id="tglPengambilan">
+                    </div>
+
+                    <div class="form-group mt-4">
+                        <label for="catatanPembeli" style="font-weight: bold; color: black;">Catatan Pembeli (Special Request)</label>
+                        <textarea class="form-control" id="catatanPembeli" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group mt-4">
+                        <h5 class="card-title float-left">Location Details</h5> <!-- Mengubah posisi judul menjadi sebelah kiri -->
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="embed-responsive embed-responsive-4by3 mb-3" style="width: 700px; height: 150px; margin: auto;">
+                                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.314744378329!2d112.94633271426045!3d-7.941125694276801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd628b589ff45b1%3A0xbbb1a51de85d9b76!2sMount%20Bromo!5e0!3m2!1sen!2sid!4v1589454516894!5m2!1sen!2sid" allowfullscreen style="width: 700px; height: 150px;"></iframe>
+                                </div>
+                                                                                                
+                                <p class="card-text text-justify"> <!-- Menambahkan kelas text-justify untuk meratakan teks paragraf -->
+                                    Mt Bromo, Area Gn. Bromo, Podokoyo, Tosari, Pasuruan, East Java, Indonesia
+                                </p>
+                                <a href="https://www.google.com/maps/place/Mount+Bromo/@-7.9411257,112.9463327,14z/data=!4m5!3m4!1s0x2dd628b589ff45b1:0xbbb1a51de85d9b76!8m2!3d-7.9411257!4d112.9493075" class="btn btn-primary" target="_blank">View Map</a>
+                            </div>
+                        </div>
+                    </div>
+                        
+              </div>
+              <div class="col-md-4 order-box mb-3 ">
+
+                <div class="order-summary">
+                  <h4>Total Pesanan</h4>
+                  <p>Open Trip</p>
+                  <ul class="list-unstyled">
+                    <li>Bromo 1 Day <span class="float-right">Rp. 350,000</span></li>
+                  </ul>
+                  <hr>
+                  <p><strong>Total: <span class="float-right">Rp. 350,000</span></strong></p>
+                </div>
+                <div class="pembayaran">
+                  <h4>Pembayaran</h4>
+                  <p>Transfer Bank BNI</p>
+                  <p>(0829726543 / MoonTour)</p>
+                  <p>BAYAR DP 60% = Rp. 350,000</p>
+                  <p><small>DP maksimal 1 x 24 jam</small></p>
+                  
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                    <a href="history-pemesanan.html" class="btn btn-primary">Pesan Sekarang</a>
+                </div>
+              </div>
+            </div>
+        </div>
+          
+        <!-- Detail pemesanan end -->
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Get In Touch</h4>
+                            <a href=""><i class="fas fa-home me-2"></i> Panorama Garden, Malang</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> MoonTour@gmail.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +62 812 345 678</a>
+                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +031 2345</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-white me-2"></i>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Company</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> About</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Careers</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Press</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Gift Cards</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Magazine</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Support</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Contact</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Legal Notice</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Terms and Conditions</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Sitemap</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Cookie policy</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <div class="row gy-3 gx-2 mb-4">
+                                <div class="col-xl-6">
+                                    <form>
+                                        <div class="form-floating">
+                                            <select class="form-select bg-dark border" id="select1">
+                                                <option value="1">Arabic</option>
+                                                <option value="2">German</option>
+                                                <option value="3">Greek</option>
+                                                <option value="3">New York</option>
+                                            </select>
+                                            <label for="select1">English</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-xl-6">
+                                    <form>
+                                        <div class="form-floating">
+                                            <select class="form-select bg-dark border" id="select1">
+                                                    <option value="1">USD</option>
+                                                <option value="2">EUR</option>
+                                                <option value="3">INR</option>
+                                                <option value="3">GBP</option>
+                                            </select>
+                                            <label for="select1">$</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <h4 class="text-white mb-3">Payments</h4>
+                            <div class="footer-bank-card">
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-amex fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-visa fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fas fa-credit-card fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-mastercard fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-paypal fa-2x"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-cc-discover fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright text-body py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-end mb-md-0">
+                        <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">MoonTour</a>, All right reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-start">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="text-white" > Lintang Angraini N.L.R</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                // Fungsi untuk menghitung total harga
+                function calculateTotal() {
+                    var totalPrice = 0;
+                    $('#cartTable tbody tr').each(function() {
+                        var price = parseFloat($(this).find('.product-price').text().replace(/[^0-9.-]+/g,""));
+                        var quantity = parseInt($(this).find('.product-quantity input').val());
+                        totalPrice += price * quantity;
+                    });
+                    $('#totalPrice').text('Total (' + $('#cartTable tbody tr').length + ' produk): Rp' + totalPrice.toFixed(2));
+                }
+            
+                // Panggil fungsi saat halaman dimuat
+                calculateTotal();
+            
+                // Atur event listener untuk menghitung total setiap kali kuantitas berubah
+                $('#cartTable tbody tr.product-quantity input').on('change', calculateTotal);
+            });
+            </script>
+    </body>
+</html>

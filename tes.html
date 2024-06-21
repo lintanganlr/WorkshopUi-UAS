@@ -1,0 +1,121 @@
+FORM KE 4 OKE DENGAN AKTIVITASNYA BISA DISILANG YAY
+
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Aktivitas</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            .form-container {
+                max-width: 400px;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            select {
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .selected-options {
+                margin-top: 10px;
+            }
+            .selected-options ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            .selected-options li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-bottom: 5px;
+            }
+            .selected-options li button {
+                background-color: red;
+                color: white;
+                border: none;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <h2>Aktivitas (dapat memilih lebih dari 1)</h2>
+            <form>
+                <label for="aktivitas">Pilih aktivitas:</label>
+                <select id="aktivitas" name="aktivitas">
+                    <option value="duduk_berdiri">Duduk dan berdiri</option>
+                    <option value="melukis">Melukis</option>
+                    <option value="menyetir_mobil">Menyetir mobil</option>
+                    <option value="mengetik">Mengetik</option>
+                    <option value="menyapu">Menyapu</option>
+                    <option value="menyetrika">Menyetrika</option>
+                    <option value="memasak">Memasak</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <div class="selected-options" id="selected-options">
+                    <strong>Aktivitas Terpilih:</strong>
+                    <ul id="options-list">
+                        <li>Tidak ada</li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+        <script>
+            let selectedActivities = [];
+
+            document.getElementById('aktivitas').addEventListener('change', function () {
+                const selectedText = this.options[this.selectedIndex].text;
+                const selectedIndex = selectedActivities.indexOf(selectedText);
+
+                if (selectedIndex === -1) {
+                    selectedActivities.push(selectedText);
+                } else {
+                    selectedActivities.splice(selectedIndex, 1);
+                }
+
+                updateSelectedOptions();
+            });
+
+            function updateSelectedOptions() {
+                const optionsList = document.getElementById('options-list');
+                optionsList.innerHTML = '';
+
+                if (selectedActivities.length === 0) {
+                    const li = document.createElement('li');
+                    li.textContent = 'Tidak ada';
+                    optionsList.appendChild(li);
+                } else {
+                    selectedActivities.forEach((activity) => {
+                        const li = document.createElement('li');
+                        li.textContent = activity;
+
+                        const removeButton = document.createElement('button');
+                        removeButton.textContent = '×';
+                        removeButton.addEventListener('click', () => {
+                            selectedActivities = selectedActivities.filter((item) => item !== activity);
+                            updateSelectedOptions();
+                        });
+
+                        li.appendChild(removeButton);
+                        optionsList.appendChild(li);
+                    });
+                }
+            }
+        </script>
+    </body>
+</html>
